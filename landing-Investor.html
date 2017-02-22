@@ -1,0 +1,373 @@
+<!DOCTYPE html> 
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>mycapital</title>
+		<link rel="stylesheet" type="text/css" href="style-landing-investor.css" />
+		<link rel="stylesheet" type="text/css" href="style-all.css" />	
+		<link rel="stylesheet" type="text/css" href="style-all-2.css" />
+		<link rel="stylesheet" type="text/css" href="style-index.css" />
+		<link rel="shortcut icon" type="image/png" href="images-new/favicon.png"/>
+		<script src="script-new/all-script-new.js"></script>
+		<script type="text/javascript" src="script-new/jquery-3.1.1.min.js"></script>
+
+		<script type="text/javascript">
+			var threshold = 768;
+			var initialDiff = ($(window).width() > threshold) ? 1:-1;
+
+			$(window).on('resize',function(e){
+			    var w = $(window).width();
+			    var currentDiff = w - threshold;
+			    if(currentDiff*initialDiff < 0) {
+			        location.reload();
+			    }
+			});
+		</script>
+		<script type="text/javascript">
+			var threshold2 = 1024;
+			var initialDiff2 = ($(window).width() > threshold2) ? 1:-1;
+
+			$(window).on('resize',function(e){
+			    var w2 = $(window).width();
+			    var currentDiff2 = w2 - threshold2;
+			    if(currentDiff2*initialDiff2 < 0) {
+			        location.reload();
+			    }
+			});
+		</script>
+		<script type="text/javascript">
+			var threshold3 = 480;
+			var initialDiff3 = ($(window).width() > threshold3) ? 1:-1;
+
+			$(window).on('resize',function(e){
+			    var w3 = $(window).width();
+			    var currentDiff3 = w3 - threshold3;
+			    if(currentDiff3*initialDiff3 < 0) {
+			        location.reload();
+			    }
+			});
+		</script>
+	</head>
+	<body class="all-body">
+		<!--header-->
+		<header id="header">
+			<div id="logo">
+				<a href="index.html">
+					<img id="logo-image" src="images-new/logo-all-white.png">
+				</a>
+			</div>
+
+			<div id="menu-icon" onclick="openNav()">
+				<img id = "dash-image" src="images-new/dash2.png">
+			</div>
+
+			<div id="button-rate">
+				Check Your Rate
+			</div>
+				
+			<div id="sidenav">
+			  	<div id="closebtn" onclick="closeNav()"><div id="inner-closebtn">x</div></div>
+			  	<div id="sidenav-inner">
+			  		<a class="link-sidenav" href="about-us.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav1.png">
+			  			</div>
+			  			<div class="sidenav-text">About us</div>
+			  		</a>
+			  		<a class="link-sidenav" href="how.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav2.png">
+			  			</div>
+			  			<div class="sidenav-text">How It Works</div>
+			  		</a>
+			  		<a class="link-sidenav" href="browseloan.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav3.png">
+			  			</div>
+			  			<div class="sidenav-text">Browse Loan</div>
+			  		</a>
+			  		<a class="link-sidenav" href="login.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav4.png">
+			  			</div>
+			  			<div class="sidenav-text">Log In</div>
+			  		</a>
+			  	</div>
+			</div>
+		</header>
+		<!--banner-->
+		<section id="banner" class="bgbnr1">
+			<div id="inner-banner">
+				<h1 id="title-banner">Smart Investing Made Easy</h1>
+				<h2 id="subtitle-banner">Invest in high quality companies ...</h2>
+				<a href="#" class="klikAll"><div class="button btnBlue center480" >
+					Get Started
+				</div>
+			</div>	
+		</section>	
+		<!--lend-->
+		<section class="allSection">
+			<div class="allTop">
+				<h1 class="title fn-blue">Why Lend <span class="ttlBold">Through Us ?</span></h1>
+			</div>
+			<table id="lend-tbl-left">
+				<tr>
+					<td rowspan="2" class="lend-image-outer">
+						<img class="lend-image" src="images-new/inv-1.png">
+					</td >
+					<td class="lend-tbl-title">Great Rates Up 19%</td>	
+				</tr>
+				<tr>
+					<td class="lend-tbl-subtitle">
+						Projected annual returns between 12%<br><br>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="lend-image-outer">
+						<img class="lend-image" src="images-new/inv-2.png">
+					</td >
+					<td class="lend-tbl-title">No Fees</td>	
+				</tr>
+				<tr>
+					<td class="lend-tbl-subtitle">
+						No fees are changed to the investors<br><br>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="lend-image-outer">
+						<img class="lend-image" src="images-new/inv-3.png">
+					</td >
+					<td class="lend-tbl-title">Monthly Cash Flow</td>	
+				</tr>
+				<tr>
+					<td class="lend-tbl-subtitle">
+						Enjoy monthly cash returns as borrowers make their mothly loan payments
+					</td>
+				</tr>
+			</table>
+			<table id="lend-tbl-right">
+				<tr>
+					<td rowspan="2" class="lend-image-outer">
+						<img class="lend-image" src="images-new/inv-4.png">
+					</td >
+					<td class="lend-tbl-title">Afordable Investment</td>	
+				</tr>
+				<tr>
+					<td class="lend-tbl-subtitle">
+						Invest as little as $10 in a business with minimum deposit of $1.000
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="lend-image-outer">
+						<img class="lend-image" src="images-new/inv-5.png">
+					</td >
+					<td class="lend-tbl-title">You Have Full Control</td>	
+				</tr>
+				<tr>
+					<td class="lend-tbl-subtitle">
+						Lend automatically using "Autoinvest" or choose business yourself. You have options to access your money at any time
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="lend-image-outer">
+						<img class="lend-image" src="images-new/inv-6.png">
+					</td >
+					<td class="lend-tbl-title">High Quality And Secure Investment</td>	
+				</tr>
+				<tr>
+					<td class="lend-tbl-subtitle">
+						Borrowers undergo a strict process prior to be able to list in MyCapital
+					</td>
+				</tr>
+			</table>
+		</section>		
+		<!--simple section-->
+	
+		<section class ="allSection" id="simple">
+			<div class="allTop">
+				<h1 class="title fn-grey">Lending <span class="ttlBold">Is Simple</span></h1>
+				<h2 class="subTitle fn-grey">It only takes view minutes to register</h2>
+			</div>
+			<div id="simple-right">
+				<div id="simple-inner">
+					<table class="tbl">
+						  <tr class="tbl-inner ">
+							    <td class="tbl-bold fn-grey" id="c1" rowspan="2">1.</td>
+							    <td class="tbl-bold fn-grey" id="c1b">Set Up Your Account</td>
+						  </tr>
+						  <tr>
+						    	<td class="tbl-light fn-black">It is Easy To Set Up Your Account</td>
+						  </tr>
+						  <tr class="tbl-inner">
+							    <td class="tbl-bold fn-grey" id="c2" rowspan="2">2.</td>
+							    <td class="tbl-bold fn-grey" id="c2b">Lend To Business</td>
+						  </tr>
+						  <tr>
+						    	<td class="tbl-light fn-black">Making Profit By Lending Your Fund To Business</td>
+						  </tr>
+						  <tr class="tbl-inner">
+							    <td class="tbl-bold fn-grey" id="c3" rowspan="2">3.</td>
+							    <td class="tbl-bold fn-grey" id="c3b">Access Your Money</td>
+						  </tr>
+						  <tr>
+						    	<td class="tbl-light fn-black">Access And See Your Fund Raising Up</td>
+						  </tr>
+					</table>
+					<div class="button btnBlue left40" >
+						Start Lending
+					</div>
+				</div>
+				<div id="simple-inner-b">
+					<table class="tbl">
+						  <tr class="tbl-inner">
+							    <td class="tbl-bold fn-grey">1.&nbsp;&nbsp;Set Up Your Account</td>
+						  </tr>
+						  <tr>
+						    	<td class="tbl-light fn-black">It is Easy To Set Up Your Account</td>
+						  </tr>
+						  <tr class="tbl-inner">						  
+							    <td class="tbl-bold fn-grey">2.&nbsp;&nbsp;Lend To Business</td>
+						  </tr>
+						  <tr>
+						    	<td class="tbl-light fn-black">Making Profit By Lending Your Fund To Business</td>
+						  </tr>
+						  <tr class="tbl-inner">
+							    <td class="tbl-bold fn-grey">3.&nbsp;&nbsp;Access Your Money</td>
+						  </tr>
+						  <tr>
+						    	<td class="tbl-light fn-black">Access And See Your Fund Raising Up</td>
+						  </tr>
+					</table>
+					<div class="button btnBlue center1024">
+						Start Lending
+					</div>
+				</div>
+			</div>
+			<div id="simple-left" >
+				<div id=simple-image-outer>
+					<img class="simple-image" id="i" src="images-new/how-1.png">
+					<img class="simple-image" id="ii" src="images-new/how-2.png">
+					<img class="simple-image" id="iii" src="images-new/how-3.png">
+				</div>
+			</div>
+		</section>	
+		<!--minimize-->
+		<section class="allSection">
+			<table class="mini-tbl-left">
+				<tr class="mini-tbl-inner">
+					<td class="mini-tbl-title">
+						Minimising Risk
+					</td>
+				</tr>	
+				<tr class="mini-tbl-inner fn-black">
+					<td class="mini-tbl-content">
+						Our Experience credit assesment team reviewevery application and only allow established and creditwhory credit business to borrow through funding circle.
+						<br><br>
+						Diversication is the best way to manage risk. this simply means spreading your lending across hundred of businesses, so you’re only lending a small amount to each one.
+						<br><br>
+						You can read more on our <a class="fn-orange klikLink" href="#">statistic page</a>
+					</td>
+				</tr> 
+				<tr class="mini-tbl-inner fn-black">
+					<td class="mini-tbl-content">
+						<div class="button btnBlue center480">
+							Start Lending
+						</div>
+					</td>
+				</tr> 
+			</table>
+			<table class="mini-tbl-right">
+				<tr class="mini-tbl-inner">
+					<td class="mini-tbl-title">
+						How do i become diversied ?
+					</td>
+				</tr>	
+				<tr class="mini-tbl-inner fn-black">
+					<td class="mini-tbl-content">
+						Lend at least 100 business Lend more than 1% of your total to each one. 
+						<br><br>	
+						Every investor who has folowed these 2 simple steps has earned a positive return (1 january 2016)
+						<br><br>
+						Every investor who has folowed these 2 simple steps has earned a positive return (1 january 2016)
+					</td>
+				</tr> 
+				<tr class="mini-tbl-inner">
+					<td class="mini-tbl-content2">
+						<div class ="button btnLineBlack center480">
+							Watch Video
+						</div>
+					</td>
+				</tr> 
+			</table>
+		</section>
+		<!--risk-->
+		<section class="allSection bg-grey">
+			<div class="allTop">
+				<h1 class="title fn-grey">Select The Risk And<br><span class="ttlBold">Return What Your Want</span></h1>
+				<h2 class="subTitle fn-grey">Are you looking to expand company or get a bridging team loan or Consolidate debt?</h2><br>
+				<h2 class="subTitle fn-grey">___________</h2>
+			</div>
+			<table class="tbl-risk">
+				<tr>
+					<td>
+						<div class ="circle" id="a">A</div>
+					</td>
+					<td>
+						<div class ="circle" id="b">B</div>
+					</td>
+					<td>
+						<div class ="circle" id="c">C</div>
+					</td>
+					<td>
+						<div class ="circle" id="d">D</div>
+					</td>
+					<td>
+						<div class ="circle" id="e">E</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="tbl-risk-subtitle">20%</td>
+					<td class="tbl-risk-subtitle">30%</td>
+					<td class="tbl-risk-subtitle">60%</td>
+					<td class="tbl-risk-subtitle">40%</td>
+					<td class="tbl-risk-subtitle">10%</td>
+				</tr>
+			</table>	
+		</section>
+		<!--note-->
+		<section class="allSection bg-blue">
+			<div class="allTop"><div id="image-note-outer"><img id="image-note" src="images-new/superman.png"></div></div>
+			<h1 class="title fn-white">Note From Our <span class="titleBold">Advisory Board</span></h1>
+			<h2 class="subTitle fn-white" id="note-subtitle">Lorem ipsum dolor sit amet consectetuer elit euismod tincidunt aliquam dolor sit amet elit dolor elit euismod tincidunt aliquam dolor sit amet elit dolor Lorem ipsum dolor sit amet consectetuer elit euismod tincidunt aliquam dolor sit amet elit dolor consectetuer elit sit amet consectetuer elit euismod tincidunt aliquam dolor sit amet elit dolor consectetuer elit</h2>
+			<div class="button btnLineWhite center bot40">
+				Join Us
+			</div>
+		</section>
+		<!--footer-->
+		<footer class="footer-all" >
+			<div class="inner-footer">
+				<h2 class=footer-header>Lokasi Kami</h2>
+				<p class="footer-content">Jalan Raya Jatimakmur, Ruko Jatimakmur Residence Kav.1, Pondokgede, Bekasi, Jawa Barat 17413</p>
+			</div>
+			<div class="inner-footer">
+				<h2 class=footer-header>Contact</h2>
+				<p class="footer-content">Telp : (021) 84900458<br>Email : info@mycapital.co.id</p>
+			</div>
+			<div class="inner-footer">
+				<h2 class=footer-header>Comunity</h2>
+				<div id="sosmed">
+					<a href="https://www.facebook.com" target="blank"><img class="sosmed-image" src="images-new/icon-fb.png"></a>
+					<a href="https://www.instagram.com" target="blank"><img class="sosmed-image" src="images-new/icon-instagram.png">
+					<a href="https://www.twitter.com" target="blank"><img class="sosmed-image" src="images-new/icon-twitter.png">
+				</div>
+			</div>
+			<div class="bottom">
+				<h4 id="bottom1"><a id="term" href="term.html" target="blank">Syarat dan Ketentuan</a></h4>
+				<h4 id="bottom2">copyright © 2017 mycapital.co.id</h4>
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+
