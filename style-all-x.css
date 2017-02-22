@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Montserrat:400,700|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i');
+*{
+	margin:0;
+	padding:0;
+	border:0;		
+}
+.all-body{
+	font-family: 'Lato', sans-serif;
+}
+/*--header--*/
+	#header{
+		width: 100%;
+		float: left;
+		background-color: #1C1B1B;
+		position: fixed;	
+		transition: background-color 0.3s linear 0s;
+		z-index: 100;
+	}
+	#logo{
+		width: 70px;
+		float: left;
+		margin: 13px 0% 5px 8%;
+		transition: margin 0.3s linear 0s;
+	}
+	#logo-image{
+		width: 100%;
+	}
+	#menu-icon{
+		display: none;
+		width: 42px;
+		float: right;
+		margin: 20px 8% 5px 0%;
+		transition: 0.5s;
+	}
+	#dash-image{
+		width: 100%;
+	}
+	.shadow{
+		box-shadow: -0.2px 0px 5px 1px #1C1B1B;
+	}
+	.noshadow{
+		box-shadow: 0px 0px 0px 0px;
+	}
+	#sidenav{
+		width: 440px;
+		margin-top: 24px;
+		margin-right: 8%;
+		transition: 0.5s;
+		float: right;
+	}
+	#closebtn{
+		display: none;
+		width: 100%;
+		float: right;
+		margin-bottom: 20%;
+	}
+	#inner-closebtn{
+		width: 50px;
+		color: #fff;
+		font-size: 40px;
+		font-weight: 200;
+		cursor: pointer;
+		text-align: center;
+		float: right;
+	}
+	#sidnav-inner{
+		float: right;
+	}
+	.link-sidenav{
+		margin-left: 5%;
+		text-decoration: none;
+		color: #fff;
+		text-align: center;
+		transition: 0.5s;
+	}
+	.wrapper-image-sidenav{
+		display: none;
+	}
+	.image-sidenav{
+		margin-top:7%;
+	}
+	.sidenav-text{
+		display: inline;
+		width: 100%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		margin-left: 10%;
+		margin:auto;
+		font-size: 120%;
+		font-weight: 300;
+		transition: 0.3s;
+	}
+	.sidenav-text:hover{
+		color: cyan;
+	}
+	#button-rate{
+		margin-top: 14px;
+		margin-right: -140px;
+		border: 1px solid #fbeb37;
+		border-radius: 3px;
+		color: #fbeb37;
+		width: 135px;
+		height: 30px;
+		padding-top: 10px;
+		padding-bottom: 0px;
+		text-align: center;
+		font-size: 15px;
+		font-weight: 700;
+		cursor: pointer;
+		float: right;
+		transition: background-color 0.3s linear 0s,margin-right 0.3s linear 0s,margin-top 0.3s linear 0s;
+	}
+	#button-rate:hover{
+		background-color: #fbeb37;
+		color: black;
+	}
+
+/*--footer--*/
+.footer-all{
+	padding-top: 70px;
+	float: left;
+	width: 100%;
+	background-color:#F2F2F2;
+}
+.inner-footer{
+	margin-bottom: 30px;
+	margin-right: 30px;
+	margin-left: 8%;
+	width: 18%;
+	float: left;
+}
+.footer-header{
+	color: #808080;
+	font-size: 140%;
+	font-weight: 400;
+}
+.footer-content{
+	margin-top: 20px;
+	color: #808080;
+	font-size: 100%;
+	font-weight: 300;
+	line-height: 150%;
+}
+.bottom{
+	margin-top: 30px;
+	width: 100%;
+	float: left;
+	border-top: 1px solid #CECCCC;
+}
+#bottom1{
+	float: left;
+	color: #808080;
+	font-size: 100%;
+	font-weight: 400;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 8%;
+	width: 18%;
+}
+#bottom2{
+	float: right;
+	color: #808080;
+	font-size: 100%;
+	font-weight: 400;
+	margin-top: 20px;
+	margin-right: 8%;
+	margin-bottom: 20px;
+	width: 290px;
+}
+#sosmed{
+	margin-top: 20px;
+	width: 100%;
+}
+.sosmed-image{
+	width: 50px;
+	margin-right: 10px;
+}
+a#term{
+	color: #808080;
+	text-decoration: none;
+}
+a:hover#term{
+	color: blue;
+	transition: color 0.3s linear 0s;
+}
+/*------------------------media one!!!------------------------*/
+@media screen and (max-width: 1024px) 
+{
+	/*--header responsive--*/
+	#menu-icon{
+		display: block;
+	}
+	#sidenav{
+		margin-top: 0%;
+		width: 0;
+		position: fixed;
+		z-index: 100;
+		top: 0;
+		right: 0; 
+		overflow-x: hidden;
+		height: 100%;
+		float: right;
+		margin-right: 0%;
+		transition: 0.5s;
+		background-color: #1C1B1B;
+	}
+	#closebtn{
+		display: block;
+	}
+	.link-sidenav{
+		margin-left: 0%;
+		float: right;
+		border-bottom: 1px solid #000000;
+	}
+	.link-sidenav:hover{
+		background-color: black;
+	}
+	.wrapper-image-sidenav{
+		display: block;
+		margin-top:12%;
+	}
+	.image-sidenav{
+		margin-top:0%;
+		width: 65%;
+	}
+	.sidenav-text{
+		font-size: 90%;
+		font-weight: 300;
+		margin-bottom:12%;
+		float: right;
+	}
+	.sidenav-text:hover{
+		color: #fff;
+	}
+	#button-rate{
+		margin: auto;
+		float: none;
+		margin-top: -45px;
+	}
+	/*--footer responsive--*/
+	.inner-footer{	
+		margin-left: 70px;
+	}
+	.sosmed-image{
+		width: 40px;
+	}
+	#bottom1{
+		padding-top: 20px;
+		padding-bottom: 10px;
+		margin:0 auto;
+		text-align:center;
+		width: 100%;
+	}
+	#bottom2{
+		padding-top: 10px;
+		padding-bottom: 20px;
+		margin:0 auto;
+		text-align:center;
+		width: 100%;
+	}
+}
+
+/*------------------------media two!!!------------------------*/
+@media screen and (max-width: 768px) 
+{
+
+	/*--footer responsive two--*/
+	.inner-footer{
+		width:100%;
+		margin-left:0;
+		margin-right:0;
+		text-align: center;
+	}
+	.footer-header{
+		margin:auto; 
+		font-size:140%;
+		font-weight:400;
+		width: 85%;
+		text-align: center;
+	}
+	.footer-content{
+		margin:auto; 
+		margin-top:20px;
+		width: 300px;
+		text-align: center;
+	}
+	#sosmed{
+		margin:auto; 
+		margin-top:20px;
+		width: 85%;
+		text-align: center;
+	}
+}
+
+/*------------------------media three!!!------------------------*/
+@media screen and (max-width: 480px) 
+{
+	/*--header responsive three--*/
+	#logo{
+		margin: 13px 0px 5px 5%;
+	}
+	#logo-image{
+		width: 70px;
+	}
+	#menu-icon{
+		margin-right: 5%;
+	}	
+	/*--footer responsive three--*/
+	.footer-content{
+		width: 80%;	
+	}
+	#button-rate{
+		width: 100px;
+		padding-top: 3px;
+		padding-bottom: 10px;
+		font-size: 15px;
+	}
+}
+/*------------------------media four!!!------------------------*/
+@media screen and (max-width: 320px) 
+{
+	#button-rate{
+		float: left;
+		margin-left: 9%;
+	}	
+}
+
+

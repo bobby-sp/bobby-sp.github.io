@@ -1,0 +1,530 @@
+<!DOCTYPE html> 
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>mycapital</title>
+		<link rel="stylesheet" type="text/css" href="style-landing-borrower.css" />
+		<link rel="stylesheet" type="text/css" href="style-all.css" />	
+		<link rel="stylesheet" type="text/css" href="style-all-2.css" />
+		<link rel="stylesheet" type="text/css" href="style-index.css" />
+		<link rel="shortcut icon" type="image/png" href="images-new/favicon.png"/>
+		<script src="script-new/all-script-new.js"></script>
+		<script type="text/javascript" src="script-new/jquery-3.1.1.min.js"></script>
+
+		<script type="text/javascript">
+			var threshold = 768;
+			var initialDiff = ($(window).width() > threshold) ? 1:-1;
+
+			$(window).on('resize',function(e){
+			    var w = $(window).width();
+			    var currentDiff = w - threshold;
+			    if(currentDiff*initialDiff < 0) {
+			        location.reload();
+			    }
+			});
+		</script>
+		<script type="text/javascript">
+			var threshold2 = 1024;
+			var initialDiff2 = ($(window).width() > threshold2) ? 1:-1;
+
+			$(window).on('resize',function(e){
+			    var w2 = $(window).width();
+			    var currentDiff2 = w2 - threshold2;
+			    if(currentDiff2*initialDiff2 < 0) {
+			        location.reload();
+			    }
+			});
+		</script>
+		<script type="text/javascript">
+			var threshold3 = 480;
+			var initialDiff3 = ($(window).width() > threshold3) ? 1:-1;
+
+			$(window).on('resize',function(e){
+			    var w3 = $(window).width();
+			    var currentDiff3 = w3 - threshold3;
+			    if(currentDiff3*initialDiff3 < 0) {
+			        location.reload();
+			    }
+			});
+		</script>
+	</head>
+	<body class="all-body">
+		<!--header-->
+		<header id="header">
+			<div id="logo">
+				<a href="index.html">
+					<img id="logo-image" src="images-new/logo-all-white.png">
+				</a>
+			</div>
+
+			<div id="menu-icon" onclick="openNav()">
+				<img id = "dash-image" src="images-new/dash2.png">
+			</div>
+
+			<div id="button-rate">
+				Check Your Rate
+			</div>
+				
+			<div id="sidenav">
+			  	<div id="closebtn" onclick="closeNav()"><div id="inner-closebtn">x</div></div>
+			  	<div id="sidenav-inner">
+			  		<a class="link-sidenav" href="about-us.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav1.png">
+			  			</div>
+			  			<div class="sidenav-text">About us</div>
+			  		</a>
+			  		<a class="link-sidenav" href="how.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav2.png">
+			  			</div>
+			  			<div class="sidenav-text">How It Works</div>
+			  		</a>
+			  		<a class="link-sidenav" href="browseloan.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav3.png">
+			  			</div>
+			  			<div class="sidenav-text">Browse Loan</div>
+			  		</a>
+			  		<a class="link-sidenav" href="login.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav4.png">
+			  			</div>
+			  			<div class="sidenav-text">Log In</div>
+			  		</a>
+			  	</div>
+			</div>
+		</header>
+		<!--banner-->
+		<section id="bannerx" class="bgbnr1">
+			<div id="inner-bannerx">
+				<h1 id="title-bannerx">Working Capital Loan</h1>
+				<h2 id="subtitle-bannerx">Bussiness Loans up to $100.000 at fixed rate from 12,5% APR to 19% APR</h2>
+				<div class="btnWrap">
+					<div class="button btnGreen" id="bnr-btn">
+						Find My Rate
+					</div>
+				</div>
+
+				<div class="bnrLinkWrapper">
+					<div class="bnrLink">
+						<div class="bnr-linkInOut"><a class ="bnr-linkIn">Working Capital Loan</a><p class="dv">|</p></div>
+						<div class="bnr-linkInOut"><a class ="bnr-linkIn">Brdiging Loan</a><p class="dv">|</p></div>
+						<div class="bnr-linkInOut"><a class ="bnr-linkIn">Company Expansion Loan</a></div>
+					</div>
+				</div>
+			</div>	
+		</section>	
+		<!--get-->
+		<section class="allSection grad1">
+
+			<table class="get fn-black">
+				<tr>
+					<td >
+						<h1 class="title1">Get Cheaper</h1>
+					</td >
+				</tr>
+				<tr>
+					<td >
+						<h1 class="title2">Funding</h1>
+					</td >
+				</tr>
+				<tr>
+					<td >
+						<h1 class="title3">Within 7 Days</h1>
+					</td >
+				</tr>
+				<tr>
+					<td class="pad">
+						<h1 class="title4">_________</h1>
+					</td >
+				</tr>
+				<tr>
+					<td class="pad2">
+						<h2 class="title5">Are you looking to expand company or get a bridging team loan or Consolidate debt ?</h2>
+					</td >
+				</tr>
+				<tr>
+					<td >
+						<h2 class="title6">MyCapital Bussiness Loan could help your company expand with lower finance cost. It only takes minutes to apply</h2>
+					</td >
+				</tr>
+		
+			</table>
+				
+		</section>
+		<!--lend-->
+		<section class="allSection">
+			<div class="allTop">
+				<h1 class="title fn-green">Why Lend <span class="ttlBold">Through Us ?</span></h1>
+			</div>
+			<table id="lend-tbl-left">
+				<tr>
+					<td rowspan="2" class="lend-image-outer">
+						<img class="lend-image" src="images-new/bor1.png">
+					</td >
+					<td class="lend-tbl-title">No Collateral</td>	
+				</tr>
+				<tr>
+					<td class="lend-tbl-subtitle">
+						We eleminate the necessities Banks and other financial institutions<br>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="lend-image-outer">
+						<img class="lend-image" src="images-new/bor2.png">
+					</td >
+					<td class="lend-tbl-title">Low Interest Rate</td>	
+				</tr>
+				<tr>
+					<td class="lend-tbl-subtitle">
+						Rates between 12-19% per annum<br><br>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="lend-image-outer">
+						<img class="lend-image" src="images-new/bor3.png">
+					</td >
+					<td class="lend-tbl-title">Find Your Rate In 5 Minutes</td>	
+				</tr>
+				<tr>
+					<td class="lend-tbl-subtitle">
+						Fill in quisionnare and we will be able to give you an indicative interest rate within minutes
+					</td>
+				</tr>
+			</table>
+			<table id="lend-tbl-right">
+				<tr>
+					<td rowspan="2" class="lend-image-outer">
+						<img class="lend-image" src="images-new/bor4.png">
+					</td >
+					<td class="lend-tbl-title">Recieve Your Fund Within 7 Days Of Applications</td>	
+				</tr>
+				<tr>
+					<td class="lend-tbl-subtitle">
+						Give us 7 days to crowdsource and give you the funding
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="lend-image-outer">
+						<img class="lend-image" src="images-new/bor5.png">
+					</td >
+					<td class="lend-tbl-title">No Penalty For Early Payment</td>	
+				</tr>
+				<tr>
+					<td class="lend-tbl-subtitle">
+						After the 1st payment you can repay part of the full principal without any fees or penalty
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2" class="lend-image-outer">
+						<img class="lend-image" src="images-new/bor6.png">
+					</td >
+					<td class="lend-tbl-title">Secure Platform</td>	
+				</tr>
+				<tr>
+					<td class="lend-tbl-subtitle">
+						We guarantee the safety of your financial transaction
+					</td>
+				</tr>
+			</table>
+		</section>	
+		<!--risk-->
+		<section class="allSection bg-green">
+			<div class="allTop">
+				<h1 class="title fn-white">Am I <span class="ttlBold">eligible ?</span></h1>
+				<h2 class="subTitle fn-white" id="ox">Lorem ipsum dolor sit amet consectetuer elit euismod tincidunt aliquam dolor sit amet elit dolor elit euismod tincidunt aliquam dolor sit amet elit dolor Lorem ipsum dolor sit amet consectetuer elit euismod tincidunt aliquam dolor sit amet elit dolor consectetuer elit</h2><br>
+			</div>
+			<table class="tbl-risk">
+				<tr>
+					<td class="bd">
+						<img id="image3" src="images-new/tree.png">
+					</td >
+					<td class="bd">
+						<img id="image3" src="images-new/graf.png">
+					</td>
+					<td>
+						<img id="image3" src="images-new/shield.png">
+					</td>
+				</tr>
+				<tr>
+					<td class="tbl-risk-subtitle fn-white bd"><h3 class="sub3">24 months in bussiness</h3></td>
+					<td class="tbl-risk-subtitle fn-white bd"><h3 class="sub3">Profitable past 2 years</h3></td>
+					<td class="tbl-risk-subtitle fn-white"><h3 class="sub3">No recent bankcrupties</h3></td>
+				</tr>
+			</table>
+
+
+			<table class = "myTable">
+			  <tr>
+			    <td class ="myDetail"><img class="myTblImage" src="images-new/tree.png"></td>
+			  </tr>
+			  <tr>
+			    <td class ="myDetail tblSub fn-white"><h3 class="subTxt">24 months in bussiness</h3></td>
+			  </tr>
+			  <tr>
+			    <td class ="myDetail"><img class="myTblImage line" src="images-new/graf.png"></td>
+			  </tr>
+			  <tr>
+			    <td class ="myDetail tblSub fn-white"><h3 class="subTxt">Profitable past 2 years</h3></td>
+			  </tr>
+			  <tr>
+			    <td class ="myDetail"><img class="myTblImage line" src="images-new/shield.png"></td>
+			  </tr>
+			  <tr>
+			    <td class ="myDetail tblSub fn-white"><h3 class="subTxt">No recent bankcrupties</h3></td>
+			  </tr>
+			</table>
+
+
+			
+		</section>	
+		<!--simple section-->
+		<section class ="allSection" id="simple">
+			<div class="allTop">
+				<h1 class="title fn-black">How it <span class="ttlBold">works?</span></h1>
+				<h2 class="subTitle fn-black">Apply only and recieve a quote in minutes</h2>
+			</div>
+			<div id="simple-right">
+				<div id="simple-inner">
+					<table class="tbl">
+						  <tr class="tbl-inner">
+							    <td class="tbl-bold fn-pink" rowspan="2">1.</td>
+							    <td class="tbl-bold fn-pink">Apply (5 minutes)</td>
+						  </tr>
+						  <tr>
+						    	<td class="tbl-light fn-black">Its Only Takes 5 Minutes For Applying</td>
+						  </tr>
+						  <tr class="tbl-inner">
+							    <td class="tbl-bold fn-grey2" id="c2" rowspan="2">2.</td>
+							    <td class="tbl-bold fn-grey2" id="c2b">Verify (1 day)</td>
+						  </tr>
+						  <tr>
+						    	<td class="tbl-light fn-grey2">Making Profit By Lending Your Fund To Business</td>
+						  </tr>
+						  <tr class="tbl-inner">
+							    <td class="tbl-bold fn-grey2" id="c3" rowspan="2">3.</td>
+							    <td class="tbl-bold fn-grey2" id="c3b">Raise Funds (5 days)</td>
+						  </tr>
+						  <tr>
+						    	<td class="tbl-light fn-grey2">Raising Up The Funds For Your Business</td>
+						  </tr>
+					</table>
+					<div class="button btnGreen left40" >
+						Start Borrow
+					</div>
+				</div>
+				<div id="simple-inner-b">
+					<table class="tbl">
+						  <tr class="tbl-inner">
+							    <td class="tbl-bold fn-grey">1.&nbsp;&nbsp;Set Up Your Account</td>
+						  </tr>
+						  <tr>
+						    	<td class="tbl-light fn-black">It is Easy To Set Up Your Account</td>
+						  </tr>
+						  <tr class="tbl-inner">						  
+							    <td class="tbl-bold fn-grey">2.&nbsp;&nbsp;Lend To Business</td>
+						  </tr>
+						  <tr>
+						    	<td class="tbl-light fn-black">Making Profit By Lending Your Fund To Business</td>
+						  </tr>
+						  <tr class="tbl-inner">
+							    <td class="tbl-bold fn-grey">3.&nbsp;&nbsp;Access Your Money</td>
+						  </tr>
+						  <tr>
+						    	<td class="tbl-light fn-black">Access And See Your Fund Raising Up</td>
+						  </tr>
+					</table>
+					<div class="button btnGreen center1024">
+						Start Lending
+					</div>
+				</div>
+			</div>
+			<div id="simple-left" >
+				<div id=simple-image-outer>
+					<img class="simple-image" id="i" src="images-new/how-1.png">
+					<img class="simple-image" id="ii" src="images-new/how-2.png">
+					<img class="simple-image" id="iii" src="images-new/how-3.png">
+				</div>
+			</div>
+		</section>	
+		
+		<!--note-->
+		<section class="allSection bg-green" id="note">
+		
+			<h1 class="title fn-white" id="cc"><span class="ttlBold" >Flexible <br></span>Payment Options</h1>
+			<div class="subSub">
+				<h2 class="subTitle fn-white" id="note-subtitle">No origination fees, no prepayment penalties. Whether you are looking to pay off loans sooner or get a lower monthly payment, we offer a range of rates and terms. Choose what works for you.</h2>
+			</div>
+			<div class="noteBoxOut">
+				<div class="noteBox fn-white">
+					<div class="noteBox1">
+						<div class="boxTitle fn-white">
+							Bullet Payment
+						</div>
+						<div class="boxSubTitle fn-white">
+							Monthly interest with principal at aturity
+						</div>
+					</div>
+					<div class="noteBox2">
+						<div class="boxTitle fn-white">
+							Fixed Monthly
+						</div>
+						<div class="boxSubTitle fn-white">
+							Monthly principal + interest payment
+						</div>
+					</div>
+				</div>	
+			</div>	
+			<div class="butBut">
+				<div class="button btnGreen center bot40" id="butButBut">
+					find my rate
+				</div>
+			</div>
+		</section>
+		<!--testimoni-->
+		<section id="testimoni">
+			<div id="testi-top">
+				<div class=xxx>
+					<div class = "xax" >Hear From</div> <div class = "xbx">Our Members</div>
+				</div>
+				<div class=xxxz>
+					<h2 id="testi-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2>
+				</div>
+			</div>
+			<div id="photo">
+				<div class="inner-photo bgPict">
+					<div class ="detail-testi" onmouseover="testiin()" onmouseout="testiout()">
+						<div class="detail-testitext" id="t">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</div>
+						<div class="detail-testi-title" id="tt">Bobby Saputra</div>
+						<div class="detail-testi-subtitle" id="ttt">Vice President Ohama</div>
+					</div>
+					<img class="single-photo" src="images-new/member1.png">
+					<script>
+						function testiin(){
+							$(document).ready(function(){
+						        $("#t").show();
+						        $("#tt").show();
+						        $("#ttt").show();
+							});
+						}
+						function testiout(){
+							$(document).ready(function(){
+						        $("#t").hide();
+						        $("#tt").hide();
+						        $("#ttt").hide();	   
+							});
+						}
+					</script>
+				</div>
+				<div class="inner-photo bgPict">
+					<div class ="detail-testi" onmouseover="testiin2()" onmouseout="testiout2()">
+						<div class="detail-testitext" id="t2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</div>
+						<div class="detail-testi-title" id="tt2">Bobby Saputra</div>
+						<div class="detail-testi-subtitle" id="ttt2">Vice President Ohama</div>
+					</div>
+					<img class="single-photo" src="images-new/member2.png">
+					<script>
+						function testiin2(){
+							$(document).ready(function(){
+						        $("#t2").show();
+						        $("#tt2").show();
+						        $("#ttt2").show();
+							});
+						}
+						function testiout2(){
+							$(document).ready(function(){
+						        $("#t2").hide();
+						        $("#tt2").hide();
+						        $("#ttt2").hide();	   
+							});
+						}
+					</script>
+				</div>
+				<div class="inner-photo bgPict">
+					<div class ="detail-testi" onmouseover="testiin3()" onmouseout="testiout3()">
+						<div class="detail-testitext" id="t3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</div>
+						<div class="detail-testi-title" id="tt3">Bobby Saputra</div>
+						<div class="detail-testi-subtitle" id="ttt3">Vice President Ohama</div>
+					</div>
+					<img class="single-photo" src="images-new/member3.png">
+					<script>
+						function testiin3(){
+							$(document).ready(function(){
+						        $("#t3").show();
+						        $("#tt3").show();
+						        $("#ttt3").show();
+							});
+						}
+						function testiout3(){
+							$(document).ready(function(){
+						        $("#t3").hide();
+						        $("#tt3").hide();
+						        $("#ttt3").hide();	   
+							});
+						}
+					</script>
+				</div>	
+				<div class="inner-photo bgPict">
+					<div class ="detail-testi" onmouseover="testiin4()" onmouseout="testiout4()">
+						<div class="detail-testitext" id="t4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</div>
+						<div class="detail-testi-title" id="tt4">Bobby Saputra</div>
+						<div class="detail-testi-subtitle" id="ttt4">Vice President Ohama</div>
+					</div>
+					<img class="single-photo" src="images-new/member4.png">
+					<script>
+						function testiin4(){
+							$(document).ready(function(){
+						        $("#t4").show();
+						        $("#tt4").show();
+						        $("#ttt4").show();
+							});
+						}
+						function testiout4(){
+							$(document).ready(function(){
+						        $("#t4").hide();
+						        $("#tt4").hide();
+						        $("#ttt4").hide();	   
+							});
+						}
+					</script>
+				</div>
+			</div>
+			<div id="testi-bottom">
+				<div id="button-testi">
+					Member Stories
+				</div>
+			</div>
+		</section>
+		<!--footer-->
+		<footer class="footer-all" >
+			<div class="inner-footer">
+				<h2 class=footer-header>Lokasi Kami</h2>
+				<p class="footer-content">Jalan Raya Jatimakmur, Ruko Jatimakmur Residence Kav.1, Pondokgede, Bekasi, Jawa Barat 17413</p>
+			</div>
+			<div class="inner-footer">
+				<h2 class=footer-header>Contact</h2>
+				<p class="footer-content">Telp : (021) 84900458<br>Email : info@mycapital.co.id</p>
+			</div>
+			<div class="inner-footer">
+				<h2 class=footer-header>Comunity</h2>
+				<div id="sosmed">
+					<a href="https://www.facebook.com" target="blank"><img class="sosmed-image" src="images-new/icon-fb.png"></a>
+					<a href="https://www.instagram.com" target="blank"><img class="sosmed-image" src="images-new/icon-instagram.png">
+					<a href="https://www.twitter.com" target="blank"><img class="sosmed-image" src="images-new/icon-twitter.png">
+				</div>
+			</div>
+			<div class="bottom">
+				<h4 id="bottom1"><a id="term" href="term.html" target="blank">Syarat dan Ketentuan</a></h4>
+				<h4 id="bottom2">copyright © 2017 mycapital.co.id</h4>
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+

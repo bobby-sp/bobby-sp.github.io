@@ -1,0 +1,271 @@
+/*------------------------banner-----------------------*/
+#banner{
+	background: url("images-new/borrow-how.png") no-repeat center center; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+	float: left;
+	padding-top: 120px;
+	padding-bottom: 220px;
+}
+#banner2{
+	background: url("images-new/invest-how.png") no-repeat center center; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+	float: left;
+	padding-top: 120px;
+	padding-bottom: 220px;
+}
+#inner-banner{
+	color: #fff;
+	float: left;
+	margin-left:8%;
+	width: 450px;
+	text-align: center;
+}
+#title-banner{
+	font-size: 400%;
+	font-weight: 700;
+	width: 100%;
+	text-align: left;
+}
+#subtitle-banner{
+	font-size: 130%;
+	font-weight: 300;
+	line-height: 200%;
+	width: 90%;
+	text-align: left;
+	margin-top: 10px;
+}
+#lx{
+	padding-top: 80px;
+	padding-bottom: 10px;
+	background: url("images-new/bg-howz.png") no-repeat center center; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+
+}
+.inv,.brw{
+	font-family:'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 170%;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.inv{
+	color: #15a2ce;
+}
+.inv:hover{
+	color: #046BA5;
+}
+.dvd{
+	font-family:'Lato', sans-serif;
+	font-weight: 100;
+	font-size: 170%;
+	padding-right: 10px;
+	padding-left: 10px;
+	color: #C1C1C1;
+}
+.brw{
+	color: #7BC142;
+}
+.brw:hover{
+	color: #55a02d;
+}
+.pdx{
+	padding-top: 20px;
+}
+
+/*------------------------image------------------------*/
+.imageLeft,.imageRight{
+	width: 55%
+}
+.imageLeft{
+	float: left;
+}
+.imageRight{
+	float: right;
+}
+.imageWrapperLeft,.imageWrapperRight{
+	width: 500px;
+}
+.imageWrapperLeft{
+	float: right;
+	margin-right: 5%; 
+}
+.imageWrapperRight{
+	float: left;
+	margin-left: 10%; 
+}
+.imageInner{
+	width: 100%;
+}
+/*------------------------table------------------------*/
+.howTableRight,.howTableLeft{
+	font-family:'Roboto', sans-serif;
+	width: 400px;
+	margin-top: 170px;
+}
+.howTableLeft{
+	float: right;
+	text-align: right;
+}
+.howTitle1,.howTitle1{
+	font-size: 300%;
+}
+.howTitle1{
+	font-weight: 500;
+}
+.howTitle2{
+	font-weight: 300;
+}
+.howSubTitle{
+	font-size: 100%;
+	font-weight: 300;
+	line-height: 150%;
+}
+.pd1{
+	padding-top: 15px;
+}
+
+/*------------------------media 1024!!!------------------------*/
+@media screen and (max-width: 1024px) 
+{
+	#title-banner{
+		font-size: 300%;
+	}
+	#subtitle-banner{
+		font-size: 110%;
+	}
+	.imageLeft,.imageRight{
+		width: 45%;
+	}
+	.howSubTitle{
+		font-size: 100%;
+		font-weight: 300;
+	}
+	.howTableRight,.howTableLeft{
+		width: 400px;
+		margin-top: 60px;
+	}
+	.imageWrapperLeft,.imageWrapperRight{
+		width: 300px;
+		float: none;
+		margin: auto; 
+	}
+}
+/*------------------------media 768!!!------------------------*/
+@media screen and (max-width: 768px) 
+{	
+	#inner-banner{
+		width: 300px;
+	}
+	#title-banner{
+		font-size: 280%;
+		width: 100%;
+	}
+	#subtitle-banner{
+		line-height: 150%;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.imageLeft,.imageRight{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.imageWrapperLeft,.imageWrapperRight{
+		width: 400px;
+		float: none;
+		margin: auto; 
+	}
+	.howTableRight,.howTableLeft{
+		margin: auto;
+		text-align: center;
+		width: 80%;
+	}
+	.howTableLeft{
+		float: none;
+	}
+}
+/*------------------------media 550!!!------------------------*/
+@media screen and (max-width: 550px) 
+{
+
+}	
+/*------------------------media 480!!!------------------------*/
+@media screen and (max-width: 480px) 
+{
+	#banner{
+		background-size: 1200px;
+		background-position: left top;
+		height: 0%;
+		padding-top: 110px;
+		padding-bottom: 70px;
+	}
+	#banner2{
+		background-size: 1200px;
+		background-position: left top;
+		height: 0%;
+		padding-top: 110px;
+		padding-bottom: 70px;
+	}
+	#inner-banner{
+		text-align: center;
+		margin: auto;
+		width: 80%;
+		float: none;
+	}
+	#title-banner{
+		font-size: 280%;
+		width: 100%;
+		text-align: center;
+	}
+	#subtitle-banner{
+		text-align: center;
+	}
+	.imageLeft,.imageRight{
+		margin-bottom: 15px;
+	}
+	.imageWrapperLeft,.imageWrapperRight{
+		width: 170px;
+	}
+	.howTableRight,.howTableLeft{
+		width: 85%;
+	}
+	.howTitle1,.howTitle2{
+		font-size: 200%;
+	}
+	.howSubTitle{
+		font-size: 90%;
+	}
+	.inv,.brw,.dvd{
+		font-size: 130%;
+	}
+}
+/*------------------------media 420!!!------------------------*/
+@media screen and (max-width: 420px) 
+{
+	
+}
+/*------------------------media 380!!!------------------------*/
+@media screen and (max-width: 380px) 
+{
+	.inv,.brw,.dvd{
+		font-size: 110%;
+	}
+}
+/*------------------------media 320!!!------------------------*/
+@media screen and (max-width: 320px) 
+{
+	#inner-banner{	
+		width: 90%;
+	}
+}

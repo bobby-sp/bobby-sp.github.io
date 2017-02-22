@@ -1,0 +1,225 @@
+/*------------------------button------------------------*/
+.button{
+	border-radius: 3px;
+	width: 138px;
+	padding-top: 10px;
+	padding-bottom: 12px;
+	margin-top: 30px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: background-color 0.3s linear 0s;
+}
+.btnBlue{
+	color: #fff;
+	background-color: #15a2ce;
+}
+.btnBlue:hover{
+	background-color: #046BA5;
+	color: #fff;
+}
+.btnGreen{
+	color: #fff;
+	background-color: #7BC142;
+}
+.btnGreen:hover{
+	background-color: #55a02d;
+	color: #fff;
+}
+.btnLineBlack{
+	color:#444242;
+	border: 1px solid #444242;
+}
+.btnLineBlack:hover{
+	color: #fff;
+	border: 1px solid #15a2ce;
+	background-color: #15a2ce;
+}
+.btnLineWhite{
+	color:#fff;
+	border: 1px solid #fff;
+}
+.btnLineWhite:hover{
+	color: #444242;
+	border: 1px solid #fff;
+	background-color: #fff;
+}
+.left40{
+	margin-left: 40px;
+}
+.bot40{
+	margin-bottom: 50px;
+}
+.center{
+	margin: auto;
+	margin-top: 30px;
+}
+/*------------------------section------------------------*/
+.allSection{
+	width: 100%;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	float: left;
+}
+/*------------------------title------------------------*/
+.allTop{
+	width: 100%;
+	float: left;
+	margin-bottom:30px;
+}
+.title{
+	font-family:'Roboto', sans-serif;
+	width: 80%;
+	font-size: 310%;
+	font-weight: 100;
+	text-align: center;
+	margin:auto;
+	margin-bottom: 15px;
+}
+.ttlBold{
+	font-weight: 300;
+}
+.subTitle{
+	font-family:'Roboto', sans-serif;
+	width: 80%;
+	font-size: 100%;
+	font-weight: 300;
+	text-align: center;
+	margin:auto;
+	float: none;
+}
+/*------------------------color------------------------*/
+.fn-blue{
+	color: #0B90C3;
+}
+.fn-black{
+	color:#444242;
+}
+.fn-grey{
+	color:#939393;
+}
+.fn-grey2{
+	color:#C1C1C1;
+}
+.fn-green{
+	color: #7BC142;
+}
+.fn-white{
+	color:#f6ffdc;
+}
+.fn-orange{
+	color: #F7931E;
+}
+.fn-pink{
+	color: #f47a6b;
+}
+
+.bg-blue{
+	background-color: #0B90C3;
+}
+.bg-green{
+	background-color: #7BC142;
+}
+.bg-grey{
+	background-color: #F2F2F2;
+}
+.bg-blue2{
+	background-color: #59C9C6;
+}
+.bg-blue3{
+	background-color: #396F72;
+}
+
+/*------------------------link------------------------*/
+
+.klikLink{
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: 400;
+}
+.klikAll{
+	text-decoration: none;
+}
+/*------------------------table------------------------*/
+.myTable{
+	width: 100%;
+}
+.myDetail{
+	text-align: center;
+
+}
+.myTblImage{
+	width: 30%;
+	
+}
+.tblSub{
+	padding-bottom: 40px;
+
+}
+.subTxt{
+	margin:auto;
+	width: 120px;
+	font-weight: 700;
+	font-size: 110%;
+}
+.line{
+	padding-top: 40px;
+	border-top: 1px solid white;
+}
+/*------------------------gradient------------------------*/
+.grad1 {
+    background: -webkit-linear-gradient(left, #999999, #FFFFFF, #999999); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #999999, #FFFFFF, #999999); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #999999, #FFFFFF, #999999); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right, #999999, #FFFFFF, #999999); /* Standard syntax (must be last) */
+}
+/*------------------------media 1024!!!------------------------*/
+@media screen and (max-width: 1024px) 
+{
+	.center1024{
+		margin: auto;
+		margin-top: 30px;
+	}
+}
+/*------------------------media 768!!!------------------------*/
+@media screen and (max-width: 768px) 
+{	
+	.allSection{
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+}
+/*------------------------media 550!!!------------------------*/
+@media screen and (max-width: 550px) 
+{
+
+}	
+/*------------------------media 480!!!------------------------*/
+@media screen and (max-width: 480px) 
+{
+	.center480{
+		margin: auto;
+		margin-top: 30px;
+	}
+	.title{
+		font-size: 200%;
+
+	}
+}
+/*------------------------media 420!!!------------------------*/
+@media screen and (max-width: 420px) 
+{
+	
+}
+/*------------------------media 380!!!------------------------*/
+@media screen and (max-width: 380px) 
+{
+	
+}
+/*------------------------media 320!!!------------------------*/
+@media screen and (max-width: 320px) 
+{
+
+}
+

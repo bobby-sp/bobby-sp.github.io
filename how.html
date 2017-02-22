@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>mycapital</title>
+		<link rel="stylesheet" type="text/css" href="style-all-x.css" />	
+		<link rel="stylesheet" type="text/css" href="style-all-2.css" />
+		<link rel="stylesheet" type="text/css" href="style-how.css" />
+		<link rel="shortcut icon" type="image/png" href="images-new/favicon.png"/>
+		<script src="script-new/all-script2-new.js"></script>
+		<script type="text/javascript" src="script-new/jquery-3.1.1.min.js"></script>
+
+		<script type="text/javascript">
+			var threshold = 768;
+			var initialDiff = ($(window).width() > threshold) ? 1:-1;
+
+			$(window).on('resize',function(e){
+			    var w = $(window).width();
+			    var currentDiff = w - threshold;
+			    if(currentDiff*initialDiff < 0) {
+			        location.reload();
+			    }
+			});
+		</script>
+		<script type="text/javascript">
+			var threshold2 = 1024;
+			var initialDiff2 = ($(window).width() > threshold2) ? 1:-1;
+
+			$(window).on('resize',function(e){
+			    var w2 = $(window).width();
+			    var currentDiff2 = w2 - threshold2;
+			    if(currentDiff2*initialDiff2 < 0) {
+			        location.reload();
+			    }
+			});
+		</script>
+		<script type="text/javascript">
+			var threshold3 = 480;
+			var initialDiff3 = ($(window).width() > threshold3) ? 1:-1;
+
+			$(window).on('resize',function(e){
+			    var w3 = $(window).width();
+			    var currentDiff3 = w3 - threshold3;
+			    if(currentDiff3*initialDiff3 < 0) {
+			        location.reload();
+			    }
+			});
+		</script>
+	</head>
+	<body class="all-body">
+		<!--header-->
+		<header id="header">
+			<div id="logo">
+				<a href="index.html">
+					<img id="logo-image" src="images-new/logo-all-white.png">
+				</a>
+			</div>
+
+			<div id="menu-icon" onclick="openNav()">
+				<img id = "dash-image" src="images-new/dash2.png">
+			</div>
+
+			<div id="button-rate">
+				Check Your Rate
+			</div>
+				
+			<div id="sidenav">
+			  	<div id="closebtn" onclick="closeNav()"><div id="inner-closebtn">x</div></div>
+			  	<div id="sidenav-inner">
+			  		<a class="link-sidenav" href="about-us.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav1.png">
+			  			</div>
+			  			<div class="sidenav-text">About us</div>
+			  		</a>
+			  		<a class="link-sidenav" href="how.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav2.png">
+			  			</div>
+			  			<div class="sidenav-text">How It Works</div>
+			  		</a>
+			  		<a class="link-sidenav" href="browseloan.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav3.png">
+			  			</div>
+			  			<div class="sidenav-text">Browse Loan</div>
+			  		</a>
+			  		<a class="link-sidenav" href="login.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav4.png">
+			  			</div>
+			  			<div class="sidenav-text">Log In</div>
+			  		</a>
+			  	</div>
+			</div>
+		</header>
+		<!--banner-->
+		<section class="allSection" id="lx">
+			<div class="imageLeft">
+				<div class="imageWrapperLeft">
+					<img class="imageInner" src="images-new/rocket.png">
+				</div>
+			</div>
+			<table class="howTableRight">
+			  	<tr>
+			    	<td>
+			    		<h2 class="howTitle1 fn-grey">HOW IT WORKS ?</h2>
+			   		</td>
+			 	</tr>
+			 	
+			 	<tr>
+			    	<td>
+			    		<h3 class="howSubTitle fn-grey pd1">"Are you looking to expand company or get a bridging team loan or Consolidate debt? MyCapital Bussiness Loan could help your company expand with lower finance cost. It only takes minutes to apply loan.</h3>
+			   		</td>
+			 	</tr>
+			 	<tr>
+			    	<td class="pdx">
+			    		<a class="klikLink" href="how-investor.html"><span class="inv">&#9666; INVESTOR</span></a><span class="dvd">|</span><a class="klikLink" href="how-borrower.html"><span class="brw">BORROWER &#9656;</span></a>
+			   		</td>
+			 	</tr>
+			</table>
+		</section>
+		<!--footer-->
+		<footer class="footer-all" >
+			<div class="inner-footer">
+				<h2 class=footer-header>Lokasi Kami</h2>
+				<p class="footer-content">Jalan Raya Jatimakmur, Ruko Jatimakmur Residence Kav.1, Pondokgede, Bekasi, Jawa Barat 17413</p>
+			</div>
+			<div class="inner-footer">
+				<h2 class=footer-header>Contact</h2>
+				<p class="footer-content">Telp : (021) 84900458<br>Email : info@mycapital.co.id</p>
+			</div>
+			<div class="inner-footer">
+				<h2 class=footer-header>Comunity</h2>
+				<div id="sosmed">
+					<a href="https://www.facebook.com" target="blank"><img class="sosmed-image" src="images-new/icon-fb.png"></a>
+					<a href="https://www.instagram.com" target="blank"><img class="sosmed-image" src="images-new/icon-instagram.png">
+					<a href="https://www.twitter.com" target="blank"><img class="sosmed-image" src="images-new/icon-twitter.png">
+				</div>
+			</div>
+			<div class="bottom">
+				<h4 id="bottom1"><a id="term" href="term.html" target="blank">Syarat dan Ketentuan</a></h4>
+				<h4 id="bottom2">copyright © 2017 mycapital.co.id</h4>
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+

@@ -1,0 +1,505 @@
+/*--banner--*/
+#banner{
+	background: url("images-new/bg_log.png") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+	float: left;
+	padding-top: 400px;
+	padding-bottom: 120px;
+}
+#inner-banner{
+	color: #fff;
+	float: left;
+	margin-left:8%;
+	width: 450px;
+	text-align: center;
+}
+#title-banner{
+	font-size: 400%;
+	font-weight: 700;
+	width: 100%;
+	text-align: left;
+}
+#subtitle-banner{
+	font-size: 130%;
+	font-weight: 300;
+	line-height: 200%;
+	width: 90%;
+	text-align: left;
+	margin-top: 10px;
+}
+
+/*------lend-------*/
+#lend-tbl-left{
+	margin-left: 8%;
+	width: 40%;
+	float: left;
+}
+#lend-tbl-right{
+	margin-right: 8%;
+	width: 40%;
+	float: right;
+}
+.lend-image-outer{
+	position: relative;
+	vertical-align: text-top;
+	width: 100px;
+}
+.lend-image{
+	position: absolute;
+	width: 80%;
+}
+.lend-tbl-title{
+	font-family:'Roboto', sans-serif;
+	font-size: 130%;
+	font-weight: 400;
+	color: #595959;
+	padding-top: 18px;
+	padding-bottom: 10px;
+}
+.lend-tbl-subtitle{
+	padding-bottom: 30px;
+	font-family:'Roboto', sans-serif;
+	font-size: 100%;
+	font-weight: 300;
+	color:#595959;
+}
+/*------simple platform-------*/
+#simple{
+	background: url("images-new/bg-risk.png") no-repeat center center fixed;
+	background-size: 100% 100%;
+}
+#simple-left{
+	width: 60%;
+	float: left;
+}
+#simple-image-outer{
+	position: relative;
+	background: url("images-new/pc2.png") no-repeat center top; 
+	background-size: 100%;
+	float: right;
+	margin-top: 20px;
+	
+	margin-right: 15%;
+	width: 60%;
+	padding-top: 55%;
+}
+.simple-image{
+	position: absolute;
+	top:6.5%;
+    left:50%;
+    -webkit-transform:translateY(-6.5%) translateX(-50%);
+	width: 95%;
+	transition: 0.3s;
+}
+#simple-right{
+	width: 40%;
+	float: right;
+}
+#simple-inner{
+	width: 300px;
+	margin-top: 10px;
+	
+	float: left;
+}
+#simple-inner-b{
+	display: none;
+}
+.tbl{
+	width: 100%;
+}
+.tbl-bold{
+	padding: 5px;
+	font-size: 150%;
+	font-weight: 400;
+	vertical-align: text-top;
+	transition: 0.1s;
+}
+#c1,#c1b{
+	color:#f7931e;
+}
+#i{
+	opacity: 1;
+}
+#ii,#iii{
+	opacity: 0;
+}
+.tbl-light{
+	padding: 5px;
+	font-size: 100%;
+	font-weight: 300;
+}
+
+.disableScroll{
+      overflow:hidden;
+}
+.enableScroll{
+      overflow:scroll;
+      
+}
+/*------mini-------*/
+
+.mini-tbl-left{
+	float: left;
+	width: 40%;
+	margin-left: 8%;
+}
+.mini-tbl-right{
+	float: right;
+	width: 40%;
+	margin-right: 8%;
+}
+.mini-tbl-inner{
+	font-family:'Roboto', sans-serif;
+	text-align: left;
+}
+.mini-tbl-title{
+	color:#15a2ce;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 170%;
+	font-weight: 500;
+}
+.mini-tbl-content{
+	padding-top: 10px;
+	font-size: 100%;
+	font-weight: 300;
+	line-height:  150%;
+}
+.mini-tbl-content2{
+	padding-top: 10px;
+}
+
+
+/*------risk-------*/
+
+.tbl-risk{
+	border-spacing: 15px;
+	width: 60%;
+	margin:auto;
+	margin-top: 250px;
+	
+	text-align: center;
+}
+.risk-image{
+	width: 100%;
+}
+.tbl-risk-subtitle{
+	padding-top: 1%;
+}
+.circle{
+	text-align: center;
+	font-size: 500%;
+	font-weight: 300;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+	float: none;
+	border:2px solid;
+}
+#a{
+	color: #F1592A;
+	border-color: #F1592A;
+}
+#b{
+	color: #13A89E;
+	border-color: #13A89E;
+}
+#c{
+	color: #39B54A;
+	border-color: #39B54A;
+}
+#d{
+	color: #92278F;
+	border-color: #92278F;
+}
+#e{
+	color: #0F75BC;
+	border-color: #0F75BC;
+}
+/*------note------*/
+#image-note-outer{
+	width: 30%;
+	margin:auto;
+	float: none;
+}
+#image-note{
+	width: 100%;
+}
+#note-subtitle{
+	margin: auto;
+	width: 700px;
+}
+
+/*------------------------media 1024!!!------------------------*/
+@media screen and (max-width: 1024px) 
+{
+	#title-banner{
+		font-size: 300%;
+	}
+	#subtitle-banner{
+		font-size: 110%;
+	}
+
+	/*------simple platform responsive-------*/
+	#simple{
+		padding-bottom: 0px;
+	}
+	#simple-left{
+		width: 100%;
+	}
+	#simple-right{
+		width: 100%;
+		height: 0%;
+	}
+	#simple-inner{
+		display: none;
+	}
+	#simple-inner-b{
+		width: 400px;
+		
+		text-align: center;
+		display: block;
+		float: none;
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 70px;
+	}
+	#simple-image-outer{
+		float: none;
+		margin: auto;
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+	/*------risk responsive-------*/
+	.circle{
+		font-size: 400%;
+		width: 80px;
+		height: 80px;
+	}
+	/*------note responsive------*/
+	#image-note-outer{
+		width: 50%;
+	}
+}
+/*------------------------media 768!!!------------------------*/
+@media screen and (max-width: 768px) 
+{	
+	/*--banner responsive two --*/
+	#inner-banner{
+		width: 300px;
+	}
+	#title-banner{
+		font-size: 280%;
+		width: 100%;
+	}
+	#subtitle-banner{
+		line-height: 150%;
+		width: 100%;
+		margin-top: 10px;
+	}
+	/*------lend responsive-------*/
+	#lend-tbl-left{
+		width: 80%;
+		float: none;
+		margin:auto;
+		margin-top: 100px;
+	}
+	#lend-tbl-right{
+		margin-right: 8%;
+		width: 80%;
+		float: none;
+		margin:auto;
+	}
+	.lend-tbl-title{
+		
+		font-size: 110%;
+		
+	}
+	.lend-tbl-subtitle{
+		font-size: 90%;
+	}
+	/*------simple responsive------*/
+	#simple-image-outer{
+		width: 80%;
+		padding-top: 73%;
+	}
+	.tbl{
+		width: 100%;
+	}
+
+	/*------mini responsive------*/
+	.mini-tbl-left{
+		float: left;
+		margin-bottom: 50px;
+		padding-left: 8%;
+		padding-right: 8%;
+		width: 100%;
+		margin-left: 0%;
+	}
+	.mini-tbl-right{
+		float: right;
+		padding-left: 8%;
+		padding-right: 8%;
+		width: 100%;
+		margin-right: 0%;
+	}
+	#risk-title{
+		margin:auto;
+		width: 95%;
+
+	}
+	#risk-subtitle{
+		margin:auto;
+		margin-top: 10px;
+		width: 80%;
+	}
+	#note-title{
+		margin-top: 50px;
+		width: 80%;
+	}
+	#note-subtitle{
+		
+		width: 80%;
+	}
+	/*------note responsive------*/
+	#image-note-outer{
+		width: 60%;
+	}
+}
+/*------------------------media 550!!!------------------------*/
+@media screen and (max-width: 550px) 
+{
+	/*------simple responsive-------*/
+	
+	.circle{
+		font-size: 300%;
+		width: 60px;
+		height: 60px;
+	}
+}	
+/*------------------------media 480!!!------------------------*/
+@media screen and (max-width: 480px) 
+{
+	/*--banner responsive three --*/
+	#banner{
+		background-size: 1200px;
+		background-position: left top;
+		height: 0%;
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	#inner-banner{
+		text-align: center;
+		margin: auto;
+		width: 80%;
+		float: none;
+	}
+	#title-banner{
+		font-size: 280%;
+		width: 100%;
+		text-align: center;
+	}
+	#subtitle-banner{
+		text-align: center;
+	}
+	/*------lend responsive-------*/
+
+	/*------simple platform responsive-------*/
+	#simple-inner-b{
+		width: 70%;
+	}
+	#simple-title{
+		font-size: 200%;
+	}
+	#simple-subtitle{
+		font-size: 90%;
+	}
+	.tbl-bold{
+		font-size: 110%;
+	}
+	.tbl-light{
+		font-size: 90%;
+	}
+	/*------mini responsive-------*/
+	.mini-tbl-inner{
+		text-align: center;
+	}
+
+	/*------risk responsive-------*/
+	#risk-title{
+		font-size: 200%;
+	}
+	#risk-subtitle{
+		font-size: 90%;
+	}
+	.tbl-risk{
+		margin-top: 0px;
+	}
+	.circle{
+		font-size: 250%;
+		width: 50px;
+		height: 50px;
+		border:1px solid;
+	}
+	/*------note responsive-------*/
+	#note-title{
+		font-size: 200%;
+	}
+	#note-subtitle{
+		font-size: 90%;
+	}
+}
+/*------------------------media 420!!!------------------------*/
+@media screen and (max-width: 420px) 
+{
+	/*------simple responsive-------*/
+	.circle{
+		font-size: 200%;
+		width: 40px;
+		height: 40px;
+	}
+}
+/*------------------------media 380!!!------------------------*/
+@media screen and (max-width: 380px) 
+{
+	/*------simple responsive-------*/
+	.circle{
+		font-size: 150%;
+		width: 30px;
+		height: 30px;
+	}
+}
+/*------------------------media 320!!!------------------------*/
+@media screen and (max-width: 320px) 
+{
+	
+	/*------modern platform responsive-------*/
+	#simple-inner-b{
+		width: 90%;
+	}
+	#simple-title{
+		font-size: 200%;
+	}
+	#simple-subtitle{
+		font-size: 90%;
+	}
+	#simple-image-outer{
+		width: 90%;
+		padding-top: 82%;
+	}
+	/*------lend responsive-------*/
+	.lend-image-outer{
+		width: 80px;
+	}
+	.lend-image{
+		width: 100%;
+	}
+}
+

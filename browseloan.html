@@ -1,0 +1,322 @@
+<!DOCTYPE html> 
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>mycapital</title>
+		<link rel="stylesheet" type="text/css" href="style-browseloan.css" />
+		<link rel="stylesheet" type="text/css" href="style-all.css" />	
+		<link rel="stylesheet" type="text/css" href="style-all-2.css" />	
+		<link rel="shortcut icon" type="image/png" href="images-new/favicon.png"/>
+		<script src="script-new/all-script-new.js"></script>
+		<script type="text/javascript" src="script-new/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript">
+			var threshold = 768;
+			var initialDiff = ($(window).width() > threshold) ? 1:-1;
+
+			$(window).on('resize',function(e){
+			    var w = $(window).width();
+			    var currentDiff = w - threshold;
+			    if(currentDiff*initialDiff < 0) {
+			        location.reload();
+			    }
+			});
+		</script>
+		<script type="text/javascript">
+			var threshold2 = 1024;
+			var initialDiff2 = ($(window).width() > threshold2) ? 1:-1;
+
+			$(window).on('resize',function(e){
+			    var w2 = $(window).width();
+			    var currentDiff2 = w2 - threshold2;
+			    if(currentDiff2*initialDiff2 < 0) {
+			        location.reload();
+			    }
+			});
+		</script>
+		<script type="text/javascript">
+			var threshold3 = 480;
+			var initialDiff3 = ($(window).width() > threshold3) ? 1:-1;
+
+			$(window).on('resize',function(e){
+			    var w3 = $(window).width();
+			    var currentDiff3 = w3 - threshold3;
+			    if(currentDiff3*initialDiff3 < 0) {
+			        location.reload();
+			    }
+			});
+		</script>
+	</head>
+	<body class="all-body">
+		<!--header-->
+		<header id="header">
+			<div id="logo">
+				<a href="index.html">
+					<img id="logo-image" src="images-new/logo-all-white.png">
+				</a>
+			</div>
+
+			<div id="menu-icon" onclick="openNav()">
+				<img id = "dash-image" src="images-new/dash2.png">
+			</div>
+
+			<div id="button-rate">
+				Check Your Rate
+			</div>
+				
+			<div id="sidenav">
+			  	<div id="closebtn" onclick="closeNav()"><div id="inner-closebtn">x</div></div>
+			  	<div id="sidenav-inner">
+			  		<a class="link-sidenav" href="about-us.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav1.png">
+			  			</div>
+			  			<div class="sidenav-text">About us</div>
+			  		</a>
+			  		<a class="link-sidenav" href="how.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav2.png">
+			  			</div>
+			  			<div class="sidenav-text">How It Works</div>
+			  		</a>
+			  		<a class="link-sidenav" href="browseloan.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav3.png">
+			  			</div>
+			  			<div class="sidenav-text">Browse Loan</div>
+			  		</a>
+			  		<a class="link-sidenav" href="login.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav4.png">
+			  			</div>
+			  			<div class="sidenav-text">Log In</div>
+			  		</a>
+			  	</div>
+			</div>
+		</header>
+		<!--start nav2-->
+		<div class="nav-1"></div>
+		<div class="nav-2">
+			<h2 id="left-lable">Thousands of investments available which will help you to become diversified</h2>
+			<div id="right-lable" >
+				<div class="buttonx btnBluex" id="btnCon">
+					Confirm
+				</div>
+			</div>
+		</div>
+		<!--end nav2-->
+
+		<!--start table-->
+		<section class="allTbl">
+		<section class="left-table">	
+			<form class="left-form" action="#" method="get">
+				<div class="outer1">
+					<section class="left-table-1">	
+						<table class ="left-align">
+							<tr>
+								<th colspan="2">Filter Loans<br></th>
+							<tr>
+							<tr>
+							    <td><input type="checkbox" name="filter" value="3 Month"></td>
+							    <td>3 Month</td>			
+							</tr>
+							<tr>						   
+							    <td><input type="checkbox" name="filter" value="6 Month" ></td>
+							    <td>6 Month</td>
+							</tr>	
+							<tr>						  
+							    <td><input type="checkbox" name="filter" value="9 Month"></td>
+							    <td>9 Month</td>						   
+							</tr>
+							<tr>						   
+							    <td><input type="checkbox" name="filter" value="12 Month"></td>
+							    <td>12 Month</td>
+							</tr>					
+						</table>
+					</section>
+				</div>
+				<div class="outer2">						
+					<section class="left-table-2">	
+						<table class="left-align">
+							<tr>
+								<th colspan="4">Risk Band</th>
+							<tr>
+							<tr>
+							    <td><input type="checkbox" name="filter" value="All" ></td>
+							    <td>All</td>
+							    <td><input type="checkbox" name="filter" value="D" ></td>
+							    <td>D</td>			
+							</tr>
+							<tr>
+							    <td><input type="checkbox" name="filter" value="A" ></td>
+							    <td>A</td>
+							    <td><input type="checkbox" name="filter" value="E" ></td>
+							    <td>E</td>			
+							</tr>
+							<tr>
+							    <td><input type="checkbox" name="filter" value="B" ></td>
+							    <td>B</td>
+							    <td><input type="checkbox" name="filter" value="F" ></td>	
+							    <td>F</td>		
+							</tr>
+							<tr>
+							    <td><input type="checkbox" name="filter" value="C" ></td>
+							    <td>C</td>
+							    <td><input type="checkbox" name="filter" value="G" ></td>
+							    <td>G</td>			
+							</tr>														
+						</table>
+					</section>
+				</div>
+				<div id="xxx" >
+					<div class="buttonx btnGreenx" id="btnSrc">
+						Search
+					</div>
+				</div>
+			</form>		
+		</section>	
+
+		<!--%%%%%%-->
+		<section class="right-table">	
+			<table class="right-form">
+				 <tr class="lineBtm">
+					<th>Loan<br>(IDR)</th>
+					<th class="left">Loan Title</th>
+				    <th>Rate <br>/ Interest</th>
+				    <th>Amount<br>(IDR)</th>
+				    <th>Term<br>(Month)</th>
+				    <th>Funded</th>
+				    <th>Ammount (IDR)<br>Time Left (Days)</th>
+				</tr>
+				<tr class="lineBtm">
+					<td >
+						<input class="inp" type="text" name="firstname"><br>
+					    Minimal 1 juta
+					</td>
+				    <td class="left"><a href="#" target="blank" class="exp">Expand the business</a></td>
+				    <td>
+				    	<div class="rate bg1"><div class="innerRate">AA</div></div>
+				    	<span>3</span><span>&nbsp;%</span>
+				    </td>
+				    <td>
+					    <span>500</span><span>&nbsp;Jt</span>
+				    </td>
+				    <td>33</td>
+				    <td>	
+						<div class="funded ">
+							<div class="inner-funded">	    			
+						</div>	
+					    <span>50</span><span>&nbsp;%</span>
+				    </td>
+				    <td>
+					    <span>250</span><span>&nbsp;Jt</span><br> 	
+					    <span>7</span><span>&nbsp;Days</span>	
+				    </td>
+				</tr>
+				<tr class="lineBtm">
+					<td >
+						<input class="inp" type="text" name="firstname"><br>
+					    Minimal 1 juta
+					</td>
+				    <td class="left"><a href="#" target="blank" class="exp">Expand the business</a></td>
+				    <td>
+				    	<div class="rate bg2"><div class="innerRate">BB</div></div>
+				    	<span>7</span><span>&nbsp;%</span>
+				    </td>
+				    <td>
+					    <span>250</span><span>&nbsp;Jt</span>
+				    </td>
+				    <td>50</td>
+				    <td>	
+						<div class="funded ">
+							<div class="inner-funded">	    			
+						</div>	
+					    <span>50</span><span>&nbsp;%</span>
+				    </td>
+				    <td>
+					    <span>125</span><span>&nbsp;Jt</span><br> 	
+					    <span>14</span><span>&nbsp;Days</span>	
+				    </td>
+				</tr>
+				<tr class="lineBtm">
+					<td >
+						<input class="inp" type="text" name="firstname"><br>
+					    Minimal 1 juta
+					</td>
+				    <td class="left"><a href="#" target="blank" class="exp">Expand the business</a></td>
+				    <td>
+				    	<div class="rate bg3"><div class="innerRate">CC</div></div>
+				    	<span>9</span><span>&nbsp;%</span>
+				    </td>
+				    <td>
+					    <span>300</span><span>&nbsp;Jt</span>
+				    </td>
+				    <td>60</td>
+				    <td>	
+						<div class="funded ">
+							<div class="inner-funded">	    			
+						</div>	
+					    <span>50</span><span>&nbsp;%</span>
+				    </td>
+				    <td>
+					    <span>150</span><span>&nbsp;Jt</span><br> 	
+					    <span>3</span><span>&nbsp;Days</span>	
+				    </td>
+				</tr>
+				<tr class="lineBtm">
+					<td >
+						<input class="inp" type="text" name="firstname"><br>
+					    Minimal 1 juta
+					</td>
+				    <td class="left"><a href="#" target="blank" class="exp">Expand the business</a></td>
+				    <td>
+				   		<div class="rate bg4"><div class="innerRate">DD</div></div>
+				   		<span>5</span><span>&nbsp;%</span>
+				    </td>
+				    <td>
+					    <span>700</span><span>&nbsp;Jt</span>
+				    </td>
+				    <td>42</td>
+				    <td>	
+						<div class="funded ">
+							<div class="inner-funded">	    			
+						</div>	
+					    <span>50</span><span>&nbsp;%</span>
+				    </td>
+				    <td>
+					    <span>350</span><span>&nbsp;Jt</span><br> 	
+					    <span>22</span><span>&nbsp;Days</span>	
+				    </td>
+				</tr>
+				
+			</table>
+		</section>
+		</section>
+		<!--end table-->
+		<!--footer-->
+		<footer class="footer-all" >
+			<div class="inner-footer">
+				<h2 class=footer-header>Lokasi Kami</h2>
+				<p class="footer-content">Jalan Raya Jatimakmur, Ruko Jatimakmur Residence Kav.1, Pondokgede, Bekasi, Jawa Barat 17413</p>
+			</div>
+			<div class="inner-footer">
+				<h2 class=footer-header>Contact</h2>
+				<p class="footer-content">Telp : (021) 84900458<br>Email : info@mycapital.co.id</p>
+			</div>
+			<div class="inner-footer">
+				<h2 class=footer-header>Comunity</h2>
+				<div id="sosmed">
+					<a href="https://www.facebook.com" target="blank"><img class="sosmed-image" src="images-new/icon-fb.png"></a>
+					<a href="https://www.instagram.com" target="blank"><img class="sosmed-image" src="images-new/icon-instagram.png">
+					<a href="https://www.twitter.com" target="blank"><img class="sosmed-image" src="images-new/icon-twitter.png">
+				</div>
+			</div>
+			<div class="bottom">
+				<h4 id="bottom1"><a id="term" href="term.html" target="blank">Syarat dan Ketentuan</a></h4>
+				<h4 id="bottom2">copyright © 2017 mycapital.co.id</h4>
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+

@@ -1,0 +1,761 @@
+/*--banner--*/
+#bannerx{
+	background: url("images-new/bg_borrow.png") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+	float: left;
+	padding-top: 120px;
+	padding-bottom: 30px;
+}
+#inner-bannerx{
+	color: #fff;
+	float: right;
+	margin-right:8%;
+	width: 600px;
+	text-align: center;
+}
+#title-bannerx{
+	float: right;
+	font-size: 400%;
+	font-weight: 700;
+	width: 70%;
+	text-align: right;
+}
+#subtitle-bannerx{
+	float: right;
+	font-size: 130%;
+	font-weight: 300;
+	line-height: 200%;
+	width: 70%;
+	text-align: right;
+	margin-top: 10px;
+}
+#bnr-btn{
+	margin-top: 60px;
+	float: right;
+}
+.bgPict{
+	background-color: #f3f3f3;
+}
+.bnrLinkWrapper{
+	float: right;
+	width: 100%;
+}
+.bnrLink{
+	font-size: 120%;
+	font-weight: 300;
+	margin-top: 30px;
+	text-align: right;
+	width: 100%;
+	height: 30px;
+	float: right;
+}
+.bnrLinkIn{
+	margin: auto;
+}
+.bnr-linkInOut{
+	display: inline-flex;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.dv{
+	width: 20px;
+}
+.bnr-linkIn:hover{
+	color:#a1f79c;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.btnWrap{
+	width: 100%;
+	float: left;
+}
+/*------get-------*/
+.get{
+	text-align: center;
+	width: 100%;
+	float: left;
+}
+.title1{
+	font-size: 250%;
+	font-weight: 500;
+}
+.title2{
+	font-family:'Montserrat', sans-serif;
+	font-size: 500%;
+	font-weight: 500;
+}
+.title3{
+	font-size: 330%;
+	font-weight: 300;
+}
+.title4{
+	font-family:'Roboto', sans-serif;
+	font-size: 200%;
+	font-weight: 300;
+}
+.title5{
+	margin: auto;
+	width: 350px;
+	font-size: 110%;
+	font-weight: 300;
+}
+.title6{
+	margin: auto;
+	width: 400px;
+	font-size: 110%;
+	font-weight: 300;
+}
+.pad{
+	padding-bottom: 50px;
+}
+.pad2{
+	padding-bottom: 30px;
+}
+
+/*------lend-------*/
+#lend-tbl-left{
+	margin-left: 8%;
+	width: 40%;
+	float: left;
+}
+#lend-tbl-right{
+	margin-right: 8%;
+	width: 40%;
+	float: right;
+}
+.lend-image-outer{
+	position: relative;
+	vertical-align: text-top;
+	width: 100px;
+}
+.lend-image{
+	position: absolute;
+	width: 80%;
+}
+.lend-tbl-title{
+	font-family:'Roboto', sans-serif;
+	font-size: 130%;
+	font-weight: 400;
+	color: #595959;
+	padding-top: 18px;
+	padding-bottom: 10px;
+}
+.lend-tbl-subtitle{
+	padding-bottom: 30px;
+	font-family:'Roboto', sans-serif;
+	font-size: 100%;
+	font-weight: 300;
+	color:#939393;
+}
+/*------simple platform-------*/
+#simple{
+	
+}
+#simple-left{
+	width: 60%;
+	float: left;
+}
+#simple-image-outer{
+	position: relative;
+	background: url("images-new/laptop.png") no-repeat center top; 
+	background-size: 100%;
+	float: right;
+	margin-top: 20px;
+	margin-right: 5%;
+	width: 80%;
+	padding-top: 40%;
+}
+.simple-image{
+	position: absolute;
+	top:20%;
+    left:50%;
+    -webkit-transform:translateY(-20%) translateX(-50%);
+	width: 70%;
+	transition: 0.3s;
+}
+#simple-right{
+	width: 40%;
+	float: right;
+}
+#simple-inner{
+	width: 300px;
+	margin-top: 10px;
+	
+	float: left;
+}
+#simple-inner-b{
+	display: none;
+}
+.tbl{
+	width: 100%;
+}
+.tbl-bold{
+	padding: 5px;
+	font-size: 150%;
+	font-weight: 400;
+	vertical-align: text-top;
+	transition: 0.1s;
+}
+#c1,#c1b{
+	color:#f7931e;
+}
+#i{
+	opacity: 1;
+}
+#ii,#iii{
+	opacity: 0;
+}
+.tbl-light{
+	padding: 5px;
+	font-size: 100%;
+	font-weight: 300;
+}
+
+.disableScroll{
+      overflow:hidden;
+}
+.enableScroll{
+      overflow:scroll;
+      
+}
+/*------mini-------*/
+
+.mini-tbl-left{
+	float: left;
+	width: 40%;
+	margin-left: 8%;
+}
+.mini-tbl-right{
+	float: right;
+	width: 40%;
+	margin-right: 8%;
+}
+.mini-tbl-inner{
+	font-family:'Roboto', sans-serif;
+	text-align: left;
+}
+.mini-tbl-title{
+	color:#15a2ce;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 170%;
+	font-weight: 500;
+}
+.mini-tbl-content{
+	padding-top: 10px;
+	font-size: 100%;
+	font-weight: 300;
+	line-height:  150%;
+}
+.mini-tbl-content2{
+	padding-top: 10px;
+}
+/*------risk-------*/
+.tbl-risk{
+	border-spacing: 0px;
+	width: 60%;
+	margin:auto;
+	text-align: center;
+}
+.tbl-risk2{
+	display: none;
+}
+.risk-image{
+	width: 100%;
+}
+.tbl-risk-subtitle{
+	font-size: 100%;
+	font-weight: 300;
+}
+#a{
+	color: #F1592A;
+	border-color: #F1592A;
+}
+#b{
+	color: #13A89E;
+	border-color: #13A89E;
+}
+#c{
+	color: #39B54A;
+	border-color: #39B54A;
+}
+#d{
+	color: #92278F;
+	border-color: #92278F;
+}
+#e{
+	color: #0F75BC;
+	border-color: #0F75BC;
+}
+#image3{
+	width: 60%;
+}
+.bd{
+	border-right: 1px solid #f6ffdc;
+	
+}
+.sub3{
+	margin:auto;
+	width: 70%;
+}
+.myTable{
+	display: none;
+}
+#ox{
+	width: 700px;
+}
+/*------note------*/
+#note{
+	background: url("images-new/interest.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+	float: left;
+}
+.subSub{
+	width: 100%;
+	float: left;
+}
+#note-subtitle{
+	text-align: right;
+	float: right;
+	margin-right: 8%;
+	width: 500px;
+}
+.noteBoxOut{
+	margin-top: 30px;
+	width: 100%;
+	float: left;
+}
+.noteBox{
+	width: 460px;
+	margin-right:8%;
+	float: right;
+}
+.noteBox1{
+	border-radius: 3px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border: 0.5px solid #f6ffdc;
+	width: 200px;
+	float: left;
+}
+.noteBox2{
+	border-radius: 3px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border: 0.5px solid #f6ffdc;
+	width: 200px;
+	float: right;
+}
+.boxTitle{
+	text-align: center;
+	width: 100%;
+	font-size: 150%;
+	margin-bottom: 10px;
+}
+.boxSubTitle{
+	text-align: center;
+	width: 100%;
+	font-size: 110%;
+	font-weight: 300;
+}
+.butBut{
+	width: 100%;
+	float: left;
+}
+#butButBut{
+	float: right;
+	margin-right: 8%;
+}
+#cc{
+	text-align: right;
+	float: right;
+	margin-right: 8%;
+}
+
+/*------------------------media 1024!!!------------------------*/
+@media screen and (max-width: 1024px) 
+{
+	#title-bannerx{
+		width: 70%
+		font-size: 300%;
+	}
+	#subtitle-bannerx{
+		font-size: 110%;
+	}
+
+	/*------simple platform responsive-------*/
+	#simple{
+		padding-bottom: 0px;
+	}
+	#simple-left{
+		width: 100%;
+	}
+	#simple-right{
+		width: 100%;
+		height: 0%;
+	}
+	#simple-inner{
+		display: none;
+	}
+	#simple-inner-b{
+		width: 400px;
+		
+		text-align: center;
+		display: block;
+		float: none;
+		margin: auto;
+		margin-top: 10px;
+		margin-bottom: 70px;
+	}
+	#simple-image-outer{
+		float: none;
+		margin: auto;
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+	/*------note responsive------*/
+	#note-subtitle{
+		text-align: center;
+		float: none;
+		margin: auto;
+		width: 600px;
+	}
+	.noteBox{
+		width: 400px;
+		margin: auto;
+		float: none;
+	}
+	#butButBut{
+		float: none;
+		margin:auto;
+		margin-top: 30px;
+	}
+	#cc{
+		text-align: center;
+		float: none;
+		margin: auto;
+		width: 600px;
+	}
+	.noteBox1{
+		padding-left: 0%;
+		padding-right: 0%;
+		width: 100%;
+		float: none;
+	}
+	.noteBox2{
+		padding-left: 0%;
+		padding-right: 0%;
+		margin-top: 15px;
+		float: none;
+		width: 100%;
+	}
+	.boxTitle{
+		width: 90%;
+		margin:auto;
+	}
+	.boxSubTitle{
+		width: 90%;
+		margin:auto;
+	}
+	.noteBox1, .noteBox2{
+		height: 80px;
+		padding-top: 30px
+	}
+	/*------risk responsive------*/
+	.tbl-risk{
+		width: 80%;
+	}
+	.subSub{
+		margin-top: 15px;
+	}
+	#ox{
+		width: 80%;
+	}
+}
+/*------------------------media 768!!!------------------------*/
+@media screen and (max-width: 768px) 
+{	
+	/*--banner responsive two --*/
+	#inner-bannerx{
+		width: 300px;
+	}
+	.bnrLink{
+		height: 0%;
+		width: 80%;
+		font-size: 110%;
+	}
+	#title-bannerx{
+		font-size: 280%;
+		width: 100%;
+	}
+	#subtitle-bannerx{
+		line-height: 150%;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.dv{
+		display: none;
+	}
+	/*------lend responsive-------*/
+	#lend-tbl-left{
+		width: 80%;
+		float: none;
+		margin:auto;
+		margin-top: 100px;
+	}
+	#lend-tbl-right{
+		margin-right: 8%;
+		width: 80%;
+		float: none;
+		margin:auto;
+	}
+	.lend-tbl-title{
+		
+		font-size: 110%;
+		
+	}
+	.lend-tbl-subtitle{
+		font-size: 90%;
+	}
+	/*------simple responsive------*/
+	#simple-image-outer{
+		width: 80%;
+		
+	}
+	.tbl{
+		width: 100%;
+	}
+
+	/*------mini responsive------*/
+	.mini-tbl-left{
+		float: left;
+		margin-bottom: 50px;
+		padding-left: 8%;
+		padding-right: 8%;
+		width: 100%;
+		margin-left: 0%;
+	}
+	.mini-tbl-right{
+		float: right;
+		padding-left: 8%;
+		padding-right: 8%;
+		width: 100%;
+		margin-right: 0%;
+	}
+	/*------note responsive------*/
+	#note-title{
+		margin-top: 50px;
+		width: 80%;
+	}
+	#note-subtitle{
+		width: 80%;
+	}
+	#cc{
+		width: 80%;
+	}
+	/*------risk responsive------*/
+	.tbl-risk{
+		width: 100%;
+	}
+	.tbl-risk-subtitle{
+		font-size: 80%;
+	}
+
+}
+/*------------------------media 550!!!------------------------*/
+@media screen and (max-width: 550px) 
+{
+
+	
+	/*------simple responsive-------*/
+	
+	.circle{
+		font-size: 300%;
+		width: 60px;
+		height: 60px;
+	}
+}	
+/*------------------------media 480!!!------------------------*/
+@media screen and (max-width: 480px) 
+{
+	/*--banner responsive three --*/
+	#bannerx{
+		background-size: 1200px;
+		background-position: center top;
+		height: 0%;
+		padding-top: 80px;
+		padding-bottom: 60px;
+	}
+	#inner-bannerx{
+		text-align: center;
+		margin: auto;
+		margin-top: 35px;
+		width: 80%;
+		float: none;
+	}
+	#title-bannerx{
+		font-size: 280%;
+		width: 100%;
+		text-align: center;
+	}
+	#subtitle-bannerx{
+		text-align: center;
+	}
+	.bnrLink{
+		width: 100%;
+		float: left;
+		margin: auto;
+	}
+	.bnrLinkWrapper{
+		margin-top:30px;
+	}
+	.bnr-linkInOut{
+		width: 100%;
+		text-align: center;
+	}
+	.bnr-linkIn{
+		float: none;
+		margin: auto;
+	}
+	#bnr-btn{
+		margin: auto;
+		float: none;
+	}
+	.btnWrap{
+		margin-top: 30px;
+	}
+	/*------lend responsive-------*/
+
+	/*------simple platform responsive-------*/
+	#simple-inner-b{
+		width: 70%;
+	}
+	#simple-title{
+		font-size: 200%;
+	}
+	#simple-subtitle{
+		font-size: 90%;
+	}
+	.tbl-bold{
+		font-size: 110%;
+	}
+	.tbl-light{
+		font-size: 90%;
+	}
+	/*------mini responsive-------*/
+	.mini-tbl-inner{
+		text-align: center;
+	}
+
+	/*------risk responsive-------*/
+	.tbl-risk{
+		display: none;
+	}
+	.myTable{
+		display: inline-table;
+	}
+	/*------note responsive-------*/
+	#note-title{
+		font-size: 200%;
+	}
+	#note-subtitle{
+		font-size: 90%;
+	}
+	.noteBox{
+		width: 80%;
+	}
+	/*------get-------*/
+	.get{
+		text-align: center;
+		width: 100%;
+		float: left;
+	}
+	.title1{
+		font-size: 150%;
+		font-weight: 500;
+	}
+	.title2{
+		font-family:'Montserrat', sans-serif;
+		font-size: 390%;
+		font-weight: 500;
+	}
+	.title3{
+		font-size: 260%;
+		font-weight: 300;
+	}
+	.title4{
+		font-family:'Roboto', sans-serif;
+		font-size: 150%;
+		font-weight: 300;
+	}
+	.title5{
+		margin: auto;
+		width: 80%;
+		font-size: 100%;
+		font-weight: 300;
+	}
+	.title6{
+		margin: auto;
+		width: 80%;
+		font-size: 100%;
+		font-weight: 300;
+	}
+	.pad{
+		padding-bottom: 30px;
+	}
+	.pad2{
+		padding-bottom: 20px;
+	}
+}
+/*------------------------media 420!!!------------------------*/
+@media screen and (max-width: 420px) 
+{
+	/*------simple responsive-------*/
+}
+/*------------------------media 380!!!------------------------*/
+@media screen and (max-width: 380px) 
+{
+	/*------simple responsive-------*/
+	#inner-bannerx{
+		width: 90%;
+	}
+}
+/*------------------------media 320!!!------------------------*/
+@media screen and (max-width: 320px) 
+{
+	
+	/*------modern platform responsive-------*/
+	#simple-inner-b{
+		width: 90%;
+	}
+	#simple-title{
+		font-size: 200%;
+	}
+	#simple-subtitle{
+		font-size: 90%;
+	}
+	#simple-image-outer{
+		width: 90%;
+		padding-top: 46%;
+	}
+	/*------lend responsive-------*/
+	.lend-image-outer{
+		width: 80px;
+	}
+	.lend-image{
+		width: 100%;
+	}
+}
+

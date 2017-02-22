@@ -1,0 +1,401 @@
+<!DOCTYPE html> 
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>mycapital</title>
+		<link rel="stylesheet" type="text/css" href="style-index.css" />
+		<link rel="stylesheet" type="text/css" href="style-all.css" />	
+		<link rel="shortcut icon" type="image/png" href="images-new/favicon.png"/>
+		<script src="script-new/all-script-new.js"></script>
+		<script type="text/javascript" src="script-new/jquery-3.1.1.min.js"></script>
+
+		<script type="text/javascript">
+			var threshold = 768;
+			var initialDiff = ($(window).width() > threshold) ? 1:-1;
+
+			$(window).on('resize',function(e){
+			    var w = $(window).width();
+			    var currentDiff = w - threshold;
+			    if(currentDiff*initialDiff < 0) {
+			        location.reload();
+			    }
+			});
+		</script>
+		<script type="text/javascript">
+			var threshold2 = 1024;
+			var initialDiff2 = ($(window).width() > threshold2) ? 1:-1;
+
+			$(window).on('resize',function(e){
+			    var w2 = $(window).width();
+			    var currentDiff2 = w2 - threshold2;
+			    if(currentDiff2*initialDiff2 < 0) {
+			        location.reload();
+			    }
+			});
+		</script>
+		<script type="text/javascript">
+			var threshold3 = 480;
+			var initialDiff3 = ($(window).width() > threshold3) ? 1:-1;
+
+			$(window).on('resize',function(e){
+			    var w3 = $(window).width();
+			    var currentDiff3 = w3 - threshold3;
+			    if(currentDiff3*initialDiff3 < 0) {
+			        location.reload();
+			    }
+			});
+		</script>
+	</head>
+	<body class="all-body">
+		<!--header-->
+		<header id="header">
+			<div id="logo">
+				<a href="index.html">
+					<img id="logo-image" src="images-new/logo-all-white.png">
+				</a>
+			</div>
+
+			<div id="menu-icon" onclick="openNav()">
+				<img id = "dash-image" src="images-new/dash2.png">
+			</div>
+
+			<div id="button-rate">
+				Check Your Rate
+			</div>
+				
+			<div id="sidenav">
+			  	<div id="closebtn" onclick="closeNav()"><div id="inner-closebtn">x</div></div>
+			  	<div id="sidenav-inner">
+			  		<a class="link-sidenav" href="about-us.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav1.png">
+			  			</div>
+			  			<div class="sidenav-text">About us</div>
+			  		</a>
+			  		<a class="link-sidenav" href="how.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav2.png">
+			  			</div>
+			  			<div class="sidenav-text">How It Works</div>
+			  		</a>
+			  		<a class="link-sidenav" href="browseloan.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav3.png">
+			  			</div>
+			  			<div class="sidenav-text">Browse Loan</div>
+			  		</a>
+			  		<a class="link-sidenav" href="login.html">
+			  			<div class ="wrapper-image-sidenav">
+			  				<img class="image-sidenav" src="images-new/icon-nav4.png">
+			  			</div>
+			  			<div class="sidenav-text">Log In</div>
+			  		</a>
+			  	</div>
+			</div>
+		</header>
+		<!--banner-->
+		<section id="banner">
+			<div id="inner-banner">
+				<h1 id="title-banner">Working Capital Loan</h1>
+				<h2 id="subtitle-banner">Bussiness Loans up to $100.000 at fixed rate from 12,5% APR to 19% APR</h2>
+			</div>	
+		</section>	
+		<!--choice-->
+		<section id="choice">
+			<!--left choice-->
+			<div id="left-inner-choice" onmouseover="mouseOver()" onmouseout="mouseOut()">
+				<a href="landing-investor.html" class="link-choice"><div id="investor-button"> I Want to Invest</div></a>
+				<div id="exit-left" onclick="exit_leftclick()">x</div>
+				<div id="left-description">
+					<h1 id="title-choice-left">For Investor</h1>
+					<h2 id="subtitle-choice-left">
+						Are you looking to expand company or get a bridging team loan or Consolidate debt? MyCapital Bussiness Loan could help your company expand with lower finance cost. It only takes minutes to apply
+					</h2>
+					<div id="left-button" onclick="leftclick();onmouseover=null;onmouseout=null;">
+						<div id="left-arrow">
+							&#x2190;
+						</div> 
+						<div id="left-more">
+							Learn More
+						</div>
+					</div>
+					<div id="left-point">
+						<div class="inner-left-point"><img class="icon-point" src="images-new/icon-1.png"><h2 class="content-point">Yes you looking to expand company</h2></div>
+						<div class="inner-left-point"><img class="icon-point" src="images-new/icon-2.png"><h2 class="content-point">Loan or Consolidate debt</h2></div>
+						<div class="inner-left-point"><img class="icon-point" src="images-new/icon-3.png"><h2 class="content-point">MyCapital Bussiness Loan could help your company</h2></div>
+					</div>
+
+					<script>
+						$(document).ready(function(){
+						    $("#left-button").click(function(){
+						        $("#left-point").show(200);
+						    });
+						});
+
+						$(document).ready(function(){
+						    $("#exit-left").click(function(){
+						        $("#left-point").hide(200);
+						    });
+						});
+					</script>
+						
+				</div>
+			</div>
+			<!--right choice-->
+			<div id="right-inner-choice" onmouseover="mouseOver2()" onmouseout="mouseOut2()">
+				<div id="line"></div>
+				<a href="landing-borrower.html" class="link-choice"><div id="borrower-button"> I Want to Borrow</div></a>
+				<div id="exit-right" onclick="exit_rightclick()">x</div>
+				<div id="right-description">
+					<h1 id="title-choice-right">For Borrower</h1>
+					<h2 id="subtitle-choice-right">
+						Yes you looking to expand company or get a bridging team loan or Consolidate debt? MyCapital Bussiness Loan could help your company expand with lower finance cost. It only takes minutes to apply
+					</h2>
+					<div id="right-button" onclick="rightclick()">
+						<div id="right-arrow">
+							&#x2192;
+						</div> 
+						<div id="right-more">
+							Learn More
+						</div>
+					</div>
+					<div id="right-point">
+						<div class="inner-right-point"><img class="icon-point2" src="images-new/icon-1.png"><h2 class="content-point2">Yes you looking to expand company</h2></div>
+						<div class="inner-right-point"><img class="icon-point2" src="images-new/icon-2.png"><h2 class="content-point2">Loan or Consolidate debt</h2></div>
+						<div class="inner-right-point"><img class="icon-point2" src="images-new/icon-3.png"><h2 class="content-point2">MyCapital Bussiness Loan could help your company</h2></div>
+					</div>
+					<script>
+						$(document).ready(function(){
+						    $("#right-button").click(function(){
+						        $("#right-point").show(200);
+						    });
+						});
+
+						$(document).ready(function(){
+						    $("#exit-right").click(function(){
+						        $("#right-point").hide(200);
+						    });
+						});
+					</script>	
+				</div>	
+			</div>	
+		</section>		
+		<!--3 section-->
+		<section id="section-3">
+			<div class="wrapper-3">
+				<div id="innera-3">
+					<h1 class="title-3">$5M</h1>
+					<div class = "dote-3"></div>
+					<h2 class="subtitle-3">Funded Loans</h2>
+				</div>
+			</div>
+				<div class="wrapper-3">
+				<div id="innerb-3">
+					<h1 class="title-3x">15%</h1>
+					<div class = "dote-3"></div>
+					<h2 class="subtitle-3x">Average Return for Investors </h2>
+				</div>
+			</div>
+				<div class="wrapper-3">
+				<div id="innerc-3">
+					<h1 class="title-3x">30k</h1>
+					<div class = "dote-3"></div>
+					<h2 class="subtitle-3x">Members</h2>
+				</div>
+			</div>
+		</section>
+		<!--modern section-->
+		<section id="modern">
+			<div id="modern-left">
+				<div id="modern-inner">
+					<h1 id="modern-title">We are a <div class="bold">modern platform</div></h1>
+					<h2 id="modern-subtitle">Are you looking to expand company or get a bridging team loan or Consolidate debt? MyCapital Bussiness Loan could help your company expand with lower finance cost.It only takes minutes to apply</h2>
+				</div>
+			</div>
+			<div id="modern-right">
+				
+			</div>
+		</section>	
+		<!--advisor section-->
+		<section id="advisor">
+			<div id="advisor-right">
+				<div id="advisor-inner">
+					<h1 id="advisor-title">Note from our<div class="bold">Advisary Board</div></h1>
+					<h2 id="advisor-subtitle">Are you looking to expand company or get a bridging team loan or Consolidate debt? MyCapital Bussiness Loan could help your company expand with lower finance cost. It only takes minutes to apply loan.</h2>
+					<a href="how.html" class="link-choice"><div id="button-join">
+						Join Now
+					</div></a>
+				</div>
+			</div>
+			<div id="advisor-left">
+				
+			</div>
+		</section>	
+		<!--refer section-->
+		<section id="refer">
+			<div id="refer-top">
+				<div class=xx>
+					<div class = "xa" >Become</div> <div class = "xb">our Partner</div>
+				</div>
+			</div>
+			<div id="refer-left">
+				<div id="refer-descleft">
+					<h1 id="refer-titleleft">Refer Investor</h1>
+					<h2 id="refer-subtitleleft">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2>
+					<a href="how-investor.html" class="link-choice"><div id="button-refer-left">Join Us</div></a>
+				</div>
+			</div>
+			<div id="refer-right">
+				<div id="refer-descright">
+					<h1 id="refer-titleright">Refer Borrower</h1>
+					<h2 id="refer-subtitleright">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2>
+					<a href="how-borrower.html" class="link-choice"><div id="button-refer-right">Join Us</div></a>
+				</div>
+			</div>
+		</section>	
+		<!--testimoni-->
+		<section id="testimoni">
+			<div id="testi-top">
+				<div class=xxx>
+					<div class = "xax" >Hear From</div> <div class = "xbx">Our Members</div>
+				</div>
+				<div class=xxxz>
+					<h2 id="testi-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h2>
+				</div>
+			</div>
+			<div id="photo">
+				<div class="inner-photo">
+					<div class ="detail-testi" onmouseover="testiin()" onmouseout="testiout()">
+						<div class="detail-testitext" id="t">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</div>
+						<div class="detail-testi-title" id="tt">Bobby Saputra</div>
+						<div class="detail-testi-subtitle" id="ttt">Vice President Ohama</div>
+					</div>
+					<img class="single-photo" src="images-new/muka1.png">
+					<script>
+						function testiin(){
+							$(document).ready(function(){
+						        $("#t").show();
+						        $("#tt").show();
+						        $("#ttt").show();
+							});
+						}
+						function testiout(){
+							$(document).ready(function(){
+						        $("#t").hide();
+						        $("#tt").hide();
+						        $("#ttt").hide();	   
+							});
+						}
+					</script>
+				</div>
+				<div class="inner-photo">
+					<div class ="detail-testi" onmouseover="testiin2()" onmouseout="testiout2()">
+						<div class="detail-testitext" id="t2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</div>
+						<div class="detail-testi-title" id="tt2">Bobby Saputra</div>
+						<div class="detail-testi-subtitle" id="ttt2">Vice President Ohama</div>
+					</div>
+					<img class="single-photo" src="images-new/muka2.png">
+					<script>
+						function testiin2(){
+							$(document).ready(function(){
+						        $("#t2").show();
+						        $("#tt2").show();
+						        $("#ttt2").show();
+							});
+						}
+						function testiout2(){
+							$(document).ready(function(){
+						        $("#t2").hide();
+						        $("#tt2").hide();
+						        $("#ttt2").hide();	   
+							});
+						}
+					</script>
+				</div>
+				<div class="inner-photo">
+					<div class ="detail-testi" onmouseover="testiin3()" onmouseout="testiout3()">
+						<div class="detail-testitext" id="t3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</div>
+						<div class="detail-testi-title" id="tt3">Bobby Saputra</div>
+						<div class="detail-testi-subtitle" id="ttt3">Vice President Ohama</div>
+					</div>
+					<img class="single-photo" src="images-new/muka3.png">
+					<script>
+						function testiin3(){
+							$(document).ready(function(){
+						        $("#t3").show();
+						        $("#tt3").show();
+						        $("#ttt3").show();
+							});
+						}
+						function testiout3(){
+							$(document).ready(function(){
+						        $("#t3").hide();
+						        $("#tt3").hide();
+						        $("#ttt3").hide();	   
+							});
+						}
+					</script>
+				</div>	
+				<div class="inner-photo">
+					<div class ="detail-testi" onmouseover="testiin4()" onmouseout="testiout4()">
+						<div class="detail-testitext" id="t4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</div>
+						<div class="detail-testi-title" id="tt4">Bobby Saputra</div>
+						<div class="detail-testi-subtitle" id="ttt4">Vice President Ohama</div>
+					</div>
+					<img class="single-photo" src="images-new/muka4.png">
+					<script>
+						function testiin4(){
+							$(document).ready(function(){
+						        $("#t4").show();
+						        $("#tt4").show();
+						        $("#ttt4").show();
+							});
+						}
+						function testiout4(){
+							$(document).ready(function(){
+						        $("#t4").hide();
+						        $("#tt4").hide();
+						        $("#ttt4").hide();	   
+							});
+						}
+					</script>
+				</div>
+			</div>
+			<div id="testi-bottom">
+				<div id="button-testi">
+					Member Stories
+				</div>
+			</div>
+		</section>
+		<!--footer-->
+		<footer class="footer-all" >
+			<div class="inner-footer">
+				<h2 class=footer-header>Lokasi Kami</h2>
+				<p class="footer-content">Jalan Raya Jatimakmur, Ruko Jatimakmur Residence Kav.1, Pondokgede, Bekasi, Jawa Barat 17413</p>
+			</div>
+			<div class="inner-footer">
+				<h2 class=footer-header>Contact</h2>
+				<p class="footer-content">Telp : (021) 84900458<br>Email : info@mycapital.co.id</p>
+			</div>
+			<div class="inner-footer">
+				<h2 class=footer-header>Comunity</h2>
+				<div id="sosmed">
+					<a href="https://www.facebook.com" target="blank"><img class="sosmed-image" src="images-new/icon-fb.png"></a>
+					<a href="https://www.instagram.com" target="blank"><img class="sosmed-image" src="images-new/icon-instagram.png">
+					<a href="https://www.twitter.com" target="blank"><img class="sosmed-image" src="images-new/icon-twitter.png">
+				</div>
+			</div>
+			<div class="bottom">
+				<h4 id="bottom1"><a id="term" href="term.html" target="blank">Syarat dan Ketentuan</a></h4>
+				<h4 id="bottom2">copyright © 2017 mycapital.co.id</h4>
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+
